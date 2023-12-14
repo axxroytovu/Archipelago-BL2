@@ -1,0 +1,25 @@
+description: 'Outer Wilds Manual for 0.4.4'
+name: AxxroyWilds
+game: Manual_OuterWilds_Nicopopxd
+Manual_OuterWilds_Nicopopxd:
+  progression_balancing: 50
+  accessibility: items
+  require_solanum: 'true'
+  require_prisoner: 'true'
+  do_place_item_category: 'true'
+  randomized_content: both
+  goal: standard
+  priority_locations:
+    - "6 - Communicate with Solanum"
+    - "94 - Communicate with the prisoner in the Subterranean Lake Dream"
+
+---
+
+description: 'Monster Hunter Rise Manual for 0.4.4'
+Manual_MHRiseHub_Axxroy:
+  progression_balancing: 50
+  accessibility: items
+  victory_condition: high_rank
+
+game: Manual_MHRiseHub_Axxroy
+name: AxxroyMHR
