@@ -43,7 +43,7 @@ EnemizerCLI/
 /SNI/
 /sni-*/
 /appimagetool*
-/host.yaml
+#/host.yaml
 /options.yaml
 /config.yaml
 /logs/
