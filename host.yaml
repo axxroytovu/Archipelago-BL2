@@ -91,6 +91,13 @@ sni_options:
   # True for operating system default program
   # Alternatively, a path to a program to open the .sfc file with
   snes_rom_start: true
+bizhawkclient_options:
+  # The location of the EmuHawk you want to auto launch patched ROMs with
+  emuhawk_path: "C:/Users/axxro/Downloads/BizHawk-2.9.1-win-x64/EmuHawk.exe"
+  # Set this to true to autostart a patched ROM in BizHawk with the connector script,
+  # to false to never open the patched rom automatically,
+  # or to a path to an external program to open the ROM file with that instead.
+  rom_start: true
 adventure_options:
   # File name of the standard NTSC Adventure rom.
   # The licensed "The 80 Classic Games" CD-ROM contains this.
@@ -108,9 +115,6 @@ adventure_options:
   rom_args: " "
   # Set this to true to display item received messages in EmuHawk
   display_msgs: true
-bizhawkclient_options:
-  emuhawk_path: "None"
-  rom_start: true
 dkc3_options:
   # File name of the DKC3 US rom
   rom_file: "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr).sfc"
@@ -160,13 +164,13 @@ oot_options:
   # true  for operating system default program
   # Alternatively, a path to a program to open the .z64 file with
   rom_start: true
+pokemon_emerald_settings:
+  # File name of your English Pokemon Emerald ROM
+  rom_file: "Pokemon - Emerald Version (USA, Europe).gba"
 pokemon_rb_options:
   # File names of the Pokemon Red and Blue roms
   red_rom_file: "Pokemon Red (UE) [S][!].gb"
   blue_rom_file: "Pokemon Blue (UE) [S][!].gb"
-  # Set this to false to never autostart a rom (such as after patching)
-  # True for operating system default program
-  # Alternatively, a path to a program to open the .gb file with
   rom_start: true
 sm_options:
   # File name of the v1.0 J rom
