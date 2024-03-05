@@ -1,0 +1,222 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify your Archipelago settings are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game. Spaces will be replaced with underscores and there is a 16-character limit.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: SnolidBTD6
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Bloons TD6 Template
+
+game: Bloons TD6
+requires:
+  version: 0.4.4 # Version of Archipelago required for this yaml to work as expected.
+
+Bloons TD6:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 50 # equivalent to 0
+    normal: 0 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  starting_map_count:
+    # The number of maps that will be automatically unlocked at the start.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 6
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  total_maps:
+    # The number of maps to be included (not including starting maps).
+    # This determines the number of "Medal" Items that are in the game in relation to your Randomizer Difficulty.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 15
+    # Maximum value is 40
+    40: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  min_map_diff:
+    # The Minimum Map Difficulty for selected maps (including starting and goal map)
+    # 
+    # 0 = Beginner
+    # 1 = Intermediate
+    # 2 = Advanced
+    # 3 = Expert
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 3
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  max_map_diff:
+    # The Maximum Map Difficulty for selected maps (including starting and goal map)
+    # 
+    # 0 = Beginner
+    # 1 = Intermediate
+    # 2 = Advanced
+    # 3 = Expert
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 3
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  rando_difficulty:
+    # The difficulty of the randomizer.
+    # 
+    # Basic: The Easy, Medium, Hard, and Impoppable Medals are all checks.
+    # Advanced: The Easy, Medium, Hard, Impoppable, and Chimps Medals are all checks.
+    # Expert: All Medals are checks.
+    basic: 50
+    advanced: 0
+    expert: 0
+
+  medalreq:
+    # The Percentage of the Total Medals required for you to access the Goal Map
+    # 
+    # For my own sanity and the randomizers this is hard bottomed at 50% so it can't be cheesed
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 50
+    # Maximum value is 100
+    90: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  starting_monkey:
+    # Would you like to randomize all starting monkeys or include the Dart Monkey in the starting monkeys.
+    # 
+    # True/On: All Starting Monkeys will be random.
+    # False/Off: The first starting monkey no matter how many you include will always be the vanilla Dart Monkey.
+    false: 0
+    true: 50
+
+  num_start_monkey:
+    # How many starting Monkeys would you like?
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 3
+    1: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  xp_curve:
+    # Off: Static
+    # On: Curved
+    # 
+    # Static: A Configurable Amount of XP is Required to Level Up EACH time.
+    # Curved: Uses the default XP Curve from BTD6
+    false: 0
+    true: 50
+
+  static_req:
+    # Min Req. 500 XP
+    # Max Req. 10,000 XP
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 500
+    # Maximum value is 10000
+    1000: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  max_level:
+    # What do you want to be the maximum level of the randomizer.
+    # 
+    # Levels start at 0, and you're required to go to at least 22
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 22
+    # Maximum value is 150
+    150: 50
+    random: 0
+    random-low: 0
+    random-high: 0

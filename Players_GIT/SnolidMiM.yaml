@@ -1,0 +1,228 @@
+﻿#                                            @@%%@@                                                  
+#                                          @@%%%#++#@@@                                              
+#                                         @@%%%%%%%#==%@@                                            
+#                                        @@%%%%%%%%%%%+=@@@                                          
+#                                       @@%%%%%%%%%%%%%#=*@@                                         
+#                                      @@@%%%%%%%%%%%%%%%++@@                                        
+#                                     @@@%%%%%%%%%%@@%%%%@#=%@                                       
+#                                     @@@%%%%%%%@%*******#@#=#@@@                                    
+#                                     @@%%%%%%%@***********@#=#@@@@                                  
+#                                    @@@%%%%%%%*************@#=#@#@@                                 
+#                                    @@%%%%%%%%**%%%%%%%%%%*%@#=##=+@@                               
+#                                    @@%%%%%%@%##%%%%#****##%%%+=@*+*@@                              
+#                                    @@%%%%##@@@@@@@@@@@@@%***%%#%%%+=%@@                            
+#                                    @#@#*@@@=..@#..@...@%*@@#**%%@%#=##@@@                          
+#                                    @%*#@@-.%=.%@-.@: :@: :@#%#**@%%#*#**@@                         
+#                                  @%**@*.#@%@@@@@@@@@@@@@%@@..%@**#@%%%+=*@                         
+#                                 @**%@@@@@@@@@@@@@@@@@@@@@@@@@@@@#**@%%%==@@                        
+#                                @**%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#**%%%*=%@                        
+#                                #**@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@***@%%=*@                        
+#                               @*+%@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@**@%%+=@@                       
+#                              @%**@@@@@@@@@@@%******%@@@@@@@@@@@@@@@*%%@%*=@@                       
+#                              @#**@@@@@@@@@#****#*******%@@@@@@@@@@@*@%@%#=@@                       
+#                             @%###@@@@@@@@#*****#*********#@@@@@@@@@%%%%@##@                        
+#                             @##%#@@@@@@@*******#***********#@@@@@@@@%%%@#@@@                       
+#                             @%#%+@@@@@@********#************#@@@@@@@%%%%+##@@                      
+#                             @@*%*@@@@@@@@#******#*******##@@@@@@@@@@%%%@*==@@                      
+#                             @%%#+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#%%@#==*@@                      
+#                              @#*+#@@@@@@@@@@@@@@@@@@@@@@@@@@@@@%@@**%@###*@@                       
+#                               @*+*@.@@@@@@@@@@@@@@@@@@@@@@@%**+*@#**%@@@@@                         
+#                              @@@*+@:%:.@@+*@@+*@@@@@@@%@#=@.:-+#**#@@@@@                           
+#                                @@##%@-.:@..%*  =@. :@:.%++@@@#**%@@@@@                             
+#                                 @@@%**#%@%*@@:-+@+.*@+#@@%#**%@@@@@@@                              
+#                                   @@@@%#**##@%%%%%%%%%#%@%@@@@@@@@%%+@@                            
+#                                      @@@@@@@@@@@@@@@@@@@@@@@%%%%@%%%*+@@                           
+#                                         @@%%%%%@@@@%%%%%@%%%%%%@%%%%+=%@@                          
+#                                        @@%%%%%%@%%%%%%%%%@%%%%%%%%%%*==%@@                         
+#                                        @%@%%%%%@%%%%%%%%%@%%%%%%%%%%*==*@@@                        
+#                                        @%%@@+=*@@%%%%%%%%%@#==*@@%%%%===@+@@                       
+#                                        @%%%@#=#@@@@@@%%@@%%@#=%@@%%%%+==+#*@@                      
+#                                       @@%%%%@%%%@@@%%%%%%%%%%%%%@%%%%#===#++@@                     
+#                                       @@%%%%@@@@@@%@@%%%%%%%%%%%@@%%%#====@==@@                    
+#                                       @%#%%%@%@%%%%@@@@@@%%%%%%%@@%%%%+===###%@                    
+#                                      @@##%%%%@@@%%%%%@@@@@@@%%%%%@%%%%#====%+=*@                   
+#                                      @@##%%%%%@@%%%%%%%%%@@@@@@@%@@%%%%====#+==@@                  
+#                                       @##%%%%%%@@%%%%%%%%%%@@@@@@@@%%%%*===+#===@@                 
+#                                      @%##%%%%%%@@%%%%%%%%%%%%@@@@@@%%%%#===+%#==*@                 
+#                                    @ @###%%%%%%@@%%%%%%%%%%%%%%@@@@%%%%%+===#%#==@@                
+#                                    @@@%##%%%%%%@@@%%%%%%%%%%%%%%%%@@%%%%#===+%%+=+@                
+#                                    @@%###%%%%%%@ @%%%%%%%%%%%%%%%%@@%%%%%====%@#==@@               
+#                                    @@%##%%%%%%%@@@%%%%%%%%%%%%%%%%%@@%%%%*===*@%==+@               
+#                                    @@###%%%%%%%@@%%%@%%%%%%%%%%%%%%@@%%%%#====@%+==%@              
+#                                   @@@##%%%%%%%@@@%%@%%%%%%%%%%%%%%%@@%%%%%+===#@*==#@              
+#                                   @@##%%%%%%%%@@%@@%%%%%%%%%%%%%%%%@@%%%%%+===+@#==+@              
+#                                   @%###%%%%%@%@@@%%%%%%%%%%%%%%%%%%%@%%%%%*====@%+==@              
+#                                   @%###%%%%%%@@%%%%%%%%%%%%%%%%%%%%%@%%%%%#====#@#=+@              
+#                                  @@####%%%%%%@%@%%%%%%%%%%%%%%%%%%%%@@%@%%%+====@%=+@              
+#                                 @@%###%%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%#===+@%+=%              
+#                                 @@####%%%%%@@%%%%%%%%%%%%%%%%%%%%%%%@@%%%%%#====%@%=*              
+#                                 @@####%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%+===#@%++@             
+#                                @@#####%%%%@%%%%%%@@@**@@@@@@@@@%%%%%%@@%%%%%#===*@%#=@             
+#                                @@####%%%%@%%%%%%%%%+==@     @@@@@@@%%@@%%%%%%+===@%%=%@            
+#                                @%####%%%%@%%%%%%%%%===@       @@@@@@@%@%%%%%%*===#%%*+@            
+#                               @@####%%%%@%%%%%%%%@*==*@          @@@%@@@%%%%%#===+@%#=@            
+#                               @@####%%%@%%%%%%%%%%*==*@          @@@%%@@%%%%%%===+@%%=#@           
+#                               @%####%%%@%%%%%%%%%%===*@           @@%%@@%%%%%%+===@%%+*@           
+#                              @@####%%%@%%%%%%%%%%%===@@           @@@%@@@#%%%%#===%%%%=@           
+#                              @@####%%@%%%%%%%%%%%#===@            @@@%%@@###%%#===**@%+#@          
+#                              @@####%@%%%%%%%%%%%%+==%@             @@@%@@####%#===*+@@*+@          
+#                             @%%####@%%%%%%%%%%%%%+=+%@             @@@@=#####%%*#==%%@%=@@         
+#                         @#+:-+*%%%@@%%%%%%%%%%%%%==*%@             @@@*.:-=++-::==+%@@@+@@         
+#                         @=.......:@%%%%%%%%%%%%%%==*@               @@@:.::....:=+=@@@@#*@         
+#                           #.....:@%%%%%%%%%%%%%%#==@@               @@*-..-..-.:---%@@@%=@@        
+#                          #:::...#%%%%%%%%%%%%%%%===@@               @@-=...=.:--+=-*@@@@=%@        
+#                           @::..*@%%%%%%%%%%%%%%%=#*@                @@-+:..::.-.-+--@%-*%#@@       
+#                           %...-@%%%%%%%%%%%%%%%#=+#@                 @::%.......:-==#*=++#@@       
+#                           %..:@%%%%%%%%%%%%%%%%*==@                  @#.#........:--=+==-#@@       
+#                           @..*%%%%%%%%%%%%%%%%%==#@                  @@@%:...:..::..:..-%*%@@      
+#                           @#=@%%%%%%%%%%%%%%%%#==@@                  @@%%#:..:...:*..+@@@#*@@      
+#                            @@%%%%%%%%%%%%%%%%%+=#@                   @@%%%#-=%#.-*#%@@@@@%+@@      
+#                            @%%%%%%%%%%%%%%%%%%==@@                   @@%%%%%%%%@@@@@@@@@@@*@@      
+#                           @@%%%%%%%%%%%%%%%%%#==@@                   @%%%%%%%%%%%@@@@@@@@@#@@@     
+#                           @%%%%%%%%%%%%%%%%%%==*@@                   @%%%%%%%%%%%%%%@@@@%%%%@@     
+#                           @%%%%%%%%%%%%%%%%%#==#@                     @%%%%%%%%%%%%%%%%@%%%#@@     
+#                          @@%%%%%%%%%%%%%%%%%*==@@                     @@%%%%%%%%%%%%%%%%%%#+@@     
+#                          @%%%%%%%%%%%%%%%%%%==%@                     @@%@%%%%%%%%%%%%%%%%%*=@@     
+#                          @%%%%%%%%%%%%%%%%%%==%@                     @@%%%%%%%%%%%%%%%%%%%=*@@     
+#                         @%%%%%%%%%%%%%%%%%%*=+@@                     @@%%%%%%%%%%%%%%%%%%%==@@     
+#                         @%%%%%%%%%%%%%%%%%%+=@@                     @@%%%%%%%%%%%%%%%%%%%#==@@     
+#                         @%%%%%%%%%%%%%%%%%%=+@                      @@%%%%%%%%%%%%%%%%%%%*==@@     
+#         @@@@@           @%%%%%%%%%%%%%%%%%+=*@                      @@@@@@%%%%@@@@%%%%%%%+=+@@     
+#       @#*****#@@       @@%%%%%%%%%%%%%%%%%==@@                    @@%#*************#%@%%%+=#@@     
+#     @@***********%@@   @%%%%%%%%%%%%%%%%%%%#%                   @@#*******************#@%+=%@      
+#     @###************#%@@%%%%%%%%%%%%%%@%%**==@                 @@#***********************%+@@      
+#    @#########****##****#@%%%%%@@%%%#*******==@                @@####*********************+*@@      
+#   @@##################*##******************==#               @@##########****************+=*@      
+#   @###############################********===%              @%%################**********===@@     
+#   @=====+**#########################****+====@              @@####################*******===*@     
+#   %=============++**###############*+=======#               @#*######################****===+%@    
+#   @#*======================================%@              @@%%#**+++****#####****++=========%@    
+#       @@@@%%%%#*++===============+*#@@%%%@@                   @@@@@@@@@@@@%@@@%%##*##*++====#@     
+#                       @@@@@@                                              @@@@@@@@@@@@@@   @@@     
+                                                                                                                                                                                                     
+name: SnolidisMissing
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Mario is Missing Template
+
+game: Mario is Missing
+requires:
+  version: 0.4.3 # Version of Archipelago required for this yaml to work as expected.
+
+Mario is Missing:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 50 # equivalent to 0
+    normal: 0 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    ["Newspaper"]
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    ["Castle Floor Key","Artifacts"]
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  required_artifacts:
+    # How many Artifacts are required to finish
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 45
+    45: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  computer_sanity:
+    # If enabled, places checks on the Computer data locations
+    false: 0
+    true: 50
+
+  city_shuffle:
+    # Shuffles which doors lead to which cities
+    false: 50
+    true: 0
+
+  irresponsible_luigi:
+    # Causes Luigi to become irresponsible, able to talk to people from behind and cross the street without being on a sidewalk.
+    false: 0
+    true: 50
+
+  show_koopa_loot:
+    # If enabled, Koopas currently holding treasure will blink on the city map.
+    false: 0
+    true: 60
+
+  community_questions:
+    # Replaces all trivia questions in the game with randomly selected Archipelago trivia questions submitted by the community!
+    false: 0
+    true: 50
+
+  game_specific_questions:
+    # If Community Questions is enabled, this option controls specific game-related questions.
+    #    None: All selected questions will only be relevant to Archipelago as a whole.
+    #    Only Relevant: Game specific questions can appear, but only for games currently being played in the multiworld. This option may select questions for 'Unsupported' games.
+    #    All: Game specific questions can appear, regardless of if that game is present in the multiworld or not. This will only pick questions from 'Supported' games.
+    none: 0
+    only_relevant: 50
+    all: 0
+
+  shirt_color:
+    # Define a custom color for Luigi's green shirt. Color values are in HTML hex.
+    base: '#205A13'
+    bright: '#3AE667'
+    dark: '#1D3E05'
+
+  pants_color:
+    # Define a custom color for Luigi's blue pants. Color values are in HTML hex.
+    base: '#722F1C'
+    bright: '#963C25'
+    dark: '#3E1A10'
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    false: 50
+    true: 0

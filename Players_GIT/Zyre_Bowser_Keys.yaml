@@ -1,0 +1,153 @@
+game: Pokemon Red and Blue
+name: Zyre_RB_Bowser
+Pokemon Red and Blue:
+  progression_balancing: 50
+  accessibility: items
+  game_version: blue
+  trainer_name: Zyre
+  rival_name: Smell
+  elite_four_badges_condition: random
+  elite_four_key_items_condition: random
+  elite_four_pokedex_condition: random-range-0-50
+  victory_road_condition: random
+  route_22_gate_condition: random
+  viridian_gym_condition: random
+  cerulean_cave_badges_condition: random
+  cerulean_cave_key_items_condition: random
+  route_3_condition: random
+  robbed_house_officer: random
+  second_fossil_check_condition: 0
+  fossil_check_item_types: any
+  exp_all: randomize
+  old_man: random
+  badgesanity: 'true'
+  badges_needed_for_hm_moves: random
+  key_items_only: 'false'
+  tea: 'true'
+  extra_key_items: 'true'
+  split_card_key: progressive
+  all_elevators_locked: 'true'
+  extra_strength_boulders: 'false'
+  require_item_finder: 'true'
+  randomize_hidden_items: on
+  prizesanity: 'true'
+  trainersanity: 'true'
+  dexsanity: 0
+  randomize_pokedex: randomize
+  require_pokedex: 'true'
+  all_pokemon_seen: 'false'
+  oaks_aide_rt_2: 5
+  oaks_aide_rt_11: 10
+  oaks_aide_rt_15: 15
+  stonesanity: 'true'
+  door_shuffle: off
+  warp_tile_shuffle: 'false'
+  randomize_rock_tunnel: 'false'
+  dark_rock_tunnel_logic: 'true'
+  free_fly_location: 'true'
+  town_map_fly_location: 'true'
+  blind_trainers: 0
+  minimum_steps_between_encounters: random-range-5-25
+  level_scaling: by_spheres
+  exp_modifier: random-range-16-128
+  randomize_wild_pokemon: completely_random
+  area_1_to_1_mapping: 'false'
+  randomize_starter_pokemon: completely_random
+  randomize_static_pokemon: completely_random
+  randomize_legendary_pokemon: any
+  catch_em_all: first_stage
+  randomize_pokemon_stats: randomize
+  randomize_pokemon_catch_rates: 'true'
+  minimum_catch_rate: 100
+  randomize_trainer_parties: completely_random
+  trainer_legendaries: 'true'
+  move_balancing: 'true'
+  fix_combat_bugs: 'true'
+  randomize_pokemon_movesets: completely_random
+  confine_transform_to_ditto: 'true'
+  start_with_four_moves: 'false'
+  same_type_attack_bonus: 'true'
+  randomize_tm_moves: 'true'
+  tm_same_type_compatibility: random
+  tm_normal_type_compatibility: random
+  tm_other_type_compatibility: random
+  hm_same_type_compatibility: random
+  hm_normal_type_compatibility: random
+  hm_other_type_compatibility: random
+  inherit_tm_hm_compatibility: 'true'
+  randomize_move_types: 'true'
+  randomize_pokemon_types: vanilla
+  secondary_type_chance: 0
+  randomize_type_chart: vanilla
+  normal_matchups: 143
+  super_effective_matchups: 38
+  not_very_effective_matchups: 38
+  immunity_matchups: 6
+  safari_zone_normal_battles: 'false'
+  normalize_encounter_chances: 'true'
+  reusable_tms: 'true'
+  better_shops: random
+  master_ball_price: 2000
+  starting_money: random
+  lose_money_on_blackout: 'false'
+  poke_doll_skip: patched
+  bicycle_gate_skips: patched
+  trap_percentage: 2
+  poison_trap_weight: medium
+  fire_trap_weight: medium
+  paralyze_trap_weight: medium
+  sleep_trap_weight: medium
+  ice_trap_weight: medium
+  randomize_pokemon_palettes: vanilla
+  death_link: 'false'
+
+---
+
+game: The Legend of Zelda
+name: Zyre_Z1_Bowser
+The Legend of Zelda:
+  progression_balancing: 50
+  accessibility: items
+  ExpandedPool: 'true'
+  TriforceLocations: anywhere
+  StartingPosition: very_dangerous
+
+---
+
+game: MegaMan Battle Network 3
+name: Zyre_MM_Bowser
+MegaMan Battle Network 3:
+  progression_balancing: 50
+  accessibility: items
+  extra_ranks: 0
+  include_jobs: 'true'
+  trade_quest_hinting: full
+
+---
+
+game: Links Awakening DX
+name: Zyre_LA_Bowser
+Links Awakening DX:
+  progression_balancing: 50
+  accessibility: items
+  logic: normal
+  tradequest: 'false'
+  rooster: 'true'
+  experimental_dungeon_shuffle: 'false'
+  experimental_entrance_shuffle: none
+  goal: instruments
+  instrument_count: 8
+  link_palette: normal
+  warp_improvements: 'true'
+  additional_warp_points: 'true'
+  trendy_game: easy
+  palette: normal
+  text_shuffle: 'false'
+  shuffle_nightmare_keys: any_world
+  shuffle_small_keys: any_world
+  shuffle_maps: any_world
+  shuffle_compasses: any_world
+  shuffle_stone_beaks: any_world
+  music_change_condition: always
+  nag_messages: 'false'
+  ap_title_screen: 'true'

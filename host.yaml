@@ -15,14 +15,14 @@ server_options:
   # Allows for clients to log on and manage the server.  If this is null, no remote administration is possible.
   server_password: null
   # Disallow !getitem
-  disable_item_cheat: false
+  disable_item_cheat: true
   # Client hint system
   # Points given to a player for each acquired item in their world
   location_check_points: 1
   # Relative point cost to receive a hint via !hint for players
   # so for example hint_cost: 20 would mean that for every 20% of available checks, you get the ability to hint,
   # for a total of 5
-  hint_cost: 10
+  hint_cost: 512
   # Release modes
   # A Release sends out the remaining items *from* a world that releases
   # "disabled" -> clients can't release,
@@ -30,7 +30,7 @@ server_options:
   # "auto" -> automatic release on goal completion
   # "auto-enabled" -> automatic release on goal completion and manual release is also enabled
   # "goal" -> release is allowed after goal completion
-  release_mode: "goal"
+  release_mode: "disabled"
   # Collect modes
   # A Collect sends the remaining items *to* a world that collects
   # "disabled" -> clients can't collect,
@@ -38,7 +38,7 @@ server_options:
   # "auto" -> automatic collect on goal completion
   # "auto-enabled" -> automatic collect on goal completion and manual collect is also enabled
   # "goal" -> collect is allowed after goal completion
-  collect_mode: "goal"
+  collect_mode: "disabled"
   # Remaining modes
   # !remaining handling, that tells a client which items remain in their pool
   # "enabled" -> Client can always ask for remaining items
@@ -57,7 +57,7 @@ server_options:
 # Options for Generation
 generator:
   # Location of your Enemizer CLI, available here: https://github.com/Ijwu/Enemizer/releases
-  enemizer_path: "EnemizerCLI/EnemizerCLI.Core"
+  enemizer_path: "C:/ProgramData/Archipelago/EnemizerCLI/EnemizerCLI.Core.exe"
   # Folder from which the player yaml files are pulled from
   player_files_path: "Players_GIT"
   # amount of players, 0 to infer from player files
@@ -129,6 +129,9 @@ factorio_options:
   bridge_chat_out: true
 ffr_options:
   display_msgs: true
+ffxiitm_options:
+  # Automatically install/update the lua script when you launch the client.  If false, you will need to manually install the script from data/lua.
+  install_script: true
 ladx_options:
   # File name of the Link's Awakening DX rom
   rom_file: "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced).gbc"
@@ -147,12 +150,18 @@ lttp_options:
 lufia2ac_options:
   # File name of the US rom
   rom_file: "Lufia II - Rise of the Sinistrals (USA).sfc"
+mariomissing_options:
+  # File name of the Mario is Missing US ROM
+  rom_file: "Mario Is Missing! (USA).sfc"
 minecraft_options:
   forge_directory: "Minecraft Forge server"
   max_heap_size: "2G"
   # release channel, currently "release", or "beta"
   # any games played on the "beta" channel have a high likelihood of no longer working on the "release" channel.
   release_channel: "release"
+mk64_options:
+  # File name of the MK64 ROM
+  rom_file: "Mario Kart 64 (U) [!].z64"
 mmbn3_options:
   # File name of the MMBN3 Blue US rom
   rom_file: "Mega Man Battle Network 3 - Blue Version (USA).gba"

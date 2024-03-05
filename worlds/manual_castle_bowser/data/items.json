@@ -1,0 +1,32 @@
+[
+	{
+		"count": "100",
+		"name": "Super Star",
+		"category": [],
+		"progression_skip_balancing": true
+	},
+	{
+		"count": "500",
+		"name": "Bowser Key",
+		"category": [],
+		"progression": true
+	},
+	{
+		"count": "10",
+		"name": "Mimic Key",
+		"category": [],
+		"trap": true
+	},
+	{
+		"count": "200",
+		"name": "Bowser Key Hint",
+		"category": [],
+		"useful": true
+	},
+	{
+		"count": "50",
+		"name": "Super Star Hint",
+		"category": [],
+		"useful": true
+	}
+]
