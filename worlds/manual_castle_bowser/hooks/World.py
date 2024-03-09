@@ -1,6 +1,6 @@
 # Object classes from AP core, to represent an entire MultiWorld and this individual World that's part of it
 from worlds.AutoWorld import World
-from BaseClasses import MultiWorld, CollectionState
+from BaseClasses import MultiWorld, CollectionState, ItemClassification
 
 # Object classes from Manual -- extending AP core -- representing items and locations that are used in generation
 from ..Items import ManualItem
@@ -98,7 +98,16 @@ def before_generate_basic(item_pool: list, world: World, multiworld: MultiWorld,
 
 # This method is run at the very end of pre-generation, once the place_item options have been handled and before AP generation occurs
 def after_generate_basic(world: World, multiworld: MultiWorld, player: int):
-    pass
+        traps = [item for item in multiworld.itempool if (item.classification == ItemClassification.trap and item.player != player)]
+        multiworld.random.shuffle(traps)
+        # print(f"Multiworld contains {len(traps)} traps")
+        for location in multiworld.get_unfilled_locations(player=player):
+            if not traps:
+                break
+            if "Mimic Chest" in location.name:
+                t = traps.pop()
+                location.place_locked_item(t)
+                multiworld.itempool.remove(t)
 
 # This method is called before the victory location has the victory event placed and locked
 def before_pre_fill(world: World, multiworld: MultiWorld, player: int):
