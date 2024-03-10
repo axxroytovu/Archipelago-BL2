@@ -16,7 +16,7 @@ Ocarina of Time:
   shuffle_dungeon_entrances: off
   shuffle_overworld_entrances: 'false'
   owl_drops: 'false'
-  warp_songs: 'true'
+  warp_songs: 'false'
   spawn_positions: off
   shuffle_bosses: off
   triforce_hunt: 'false'
@@ -50,7 +50,7 @@ Ocarina of Time:
   shopsanity: fixed_number
   shop_slots: 4
   shopsanity_prices: starting_wallet
-  tokensanity: off
+  tokensanity: all
   shuffle_scrubs: random_prices
   shuffle_child_trade: shuffle
   shuffle_freestanding_items: off
@@ -74,7 +74,7 @@ Ocarina of Time:
   free_scarecrow: 'false'
   fast_bunny_hood: 'true'
   plant_beans: 'false'
-  chicken_count: 7
+  chicken_count: 3
   big_poe_count: 1
   fae_torch_count: 24
   correct_chest_appearances: off
@@ -92,7 +92,7 @@ Ocarina of Time:
   blue_fire_arrows: 'false'
   fix_broken_drops: 'true'
   start_with_consumables: 'false'
-  start_with_rupees: 'true'
+  start_with_rupees: 'false'
   item_pool_value: balanced
   junk_ice_traps: normal
   ice_trap_appearance: major_only
@@ -127,10 +127,10 @@ Ocarina of Time:
   boomerang_trail_color_outer: match_inner
   heart_color: red
   magic_color: green
-  a_button_color: n64_red
-  b_button_color: n64_red
-  c_button_color: gamecube_red
-  start_button_color: n64_red
+  a_button_color: gamecube_red
+  b_button_color: gamecube_red
+  c_button_color: n64_red
+  start_button_color: gamecube_red
   sfx_navi_overworld: default
   sfx_navi_enemy: default
   sfx_low_hp: default

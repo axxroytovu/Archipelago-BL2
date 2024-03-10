@@ -1,0 +1,33 @@
+Super Mario 64:
+  progression_balancing: 0
+  accessibility: locations
+  AreaRandomizer: courses_and_secrets
+  BuddyChecks: 'true'
+  ExclamationBoxes: 1ups_only
+  ProgressiveKeys: 'true'
+  EnableCoinStars: 'false'
+  StrictCapRequirements: 'true'
+  StrictCannonRequirements: 'true'
+  StrictMoveRequirements: 'true'
+  AmountOfStars: 120
+  FirstBowserStarDoorCost: random
+  BasementStarDoorCost: random
+  SecondFloorStarDoorCost: random
+  MIPS1Cost: random
+  MIPS2Cost: random
+  StarsToFinish: random
+  death_link: 'false'
+  CompletionType: all_bowser_stages
+  MoveRandomizerTripleJump: 'true'
+  MoveRandomizerLongJump: 'true'
+  MoveRandomizerBackflip: 'true'
+  MoveRandomizerSideFlip: 'true'
+  MoveRandomizerWallKick: 'true'
+  MoveRandomizerDive: 'true'
+  MoveRandomizerGroundPound: 'true'
+  MoveRandomizerKick: 'true'
+  MoveRandomizerClimb: 'true'
+  MoveRandomizerLedgeGrab: 'true'
+description: purin SM64 Move Rando YAML
+game: Super Mario 64
+name: NikkiSM64
