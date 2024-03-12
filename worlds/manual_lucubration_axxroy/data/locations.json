@@ -1,0 +1,869 @@
+[
+	{
+		"name": "Sealed Products 1",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:1|"
+	},
+	{
+		"name": "Deck-Booster 1",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:1|"
+	},
+	{
+		"name": "Sealed Products 2",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:2|"
+	},
+	{
+		"name": "Deck-Booster 2",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:2|"
+	},
+	{
+		"name": "Sealed Product 3",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:3|"
+	},
+	{
+		"name": "Deck-Booster 3",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:3|"
+	},
+	{
+		"name": "Sealed Product 4",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:4|"
+	},
+	{
+		"name": "Deck-Booster 4",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:4|"
+	},
+	{
+		"name": "Sealed Product 5",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:5|"
+	},
+	{
+		"name": "Deck-Booster 5",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:5|"
+	},
+	{
+		"name": "Sealed Product 6",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:6|"
+	},
+	{
+		"name": "Deck-Booster 6",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:6|"
+	},
+	{
+		"name": "Sealed Product 7",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:7|"
+	},
+	{
+		"name": "Deck-Booster 7",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:7|"
+	},
+	{
+		"name": "Sealed Product 8",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:8|"
+	},
+	{
+		"name": "Deck-Booster 8",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:8|"
+	},
+	{
+		"name": "Sealed Product 9",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:9|"
+	},
+	{
+		"name": "Deck-Booster 9",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:9|"
+	},
+	{
+		"name": "Sealed Product 10",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:10|"
+	},
+	{
+		"name": "Deck-Booster 10",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:10|"
+	},
+	{
+		"name": "Sealed Product 11",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:11|"
+	},
+	{
+		"name": "Deck-Booster 11",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:11|"
+	},
+	{
+		"name": "Sealed Product 12",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:12|"
+	},
+	{
+		"name": "Deck-Booster 12",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:12|"
+	},
+	{
+		"name": "Sealed Product 13",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:13|"
+	},
+	{
+		"name": "Deck-Booster 13",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:13|"
+	},
+	{
+		"name": "Sealed Product 14",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:14|"
+	},
+	{
+		"name": "Deck-Booster 14",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:14|"
+	},
+	{
+		"name": "Sealed Product 15",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:15|"
+	},
+	{
+		"name": "Deck-Booster 15",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:15|"
+	},
+	{
+		"name": "Sealed Product 16",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:16|"
+	},
+	{
+		"name": "Deck-Booster 16",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:16|"
+	},
+	{
+		"name": "Sealed Product 17",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:17|"
+	},
+	{
+		"name": "Deck-Booster 17",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:17|"
+	},
+	{
+		"name": "Sealed Product 18",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:18|"
+	},
+	{
+		"name": "Deck-Booster 18",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:18|"
+	},
+	{
+		"name": "Sealed Product 19",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:19|"
+	},
+	{
+		"name": "Deck-Booster 19",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:19|"
+	},
+	{
+		"name": "Sealed Product 20",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:20|"
+	},
+	{
+		"name": "Deck-Booster 20",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:20|"
+	},
+	{
+		"name": "Sealed Product 21",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:21|"
+	},
+	{
+		"name": "Deck-Booster 21",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:21|"
+	},
+	{
+		"name": "Sealed Product 22",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:22|"
+	},
+	{
+		"name": "Deck-Booster 22",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:22|"
+	},
+	{
+		"name": "Sealed Product 23",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:23|"
+	},
+	{
+		"name": "Deck-Booster 23",
+		"category": ["MTGJSON"],
+		"requires": ": |Progressive MTGJSON:23|"
+	},
+	{
+		"name": "Organize Kitchen 1",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:1|"
+	},
+	{
+		"name": "Organize Kitchen 2",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:2|"
+	},
+	{
+		"name": "Organize Kitchen 3",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:3|"
+	},
+	{
+		"name": "Organize Kitchen 4",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:4|"
+	},
+	{
+		"name": "Organize Kitchen 5",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:5|"
+	},
+	{
+		"name": "Organize Kitchen 6",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Kitchen:6|"
+	},
+	{
+		"name": "Organize Office 1",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:1|"
+	},
+	{
+		"name": "Organize Office 2",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:2|"
+	},
+	{
+		"name": "Organize Office 3",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:3|"
+	},
+	{
+		"name": "Organize Office 4",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:4|"
+	},
+	{
+		"name": "Organize Office 5",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:5|"
+	},
+	{
+		"name": "Organize Office 6",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Office:6|"
+	},
+	{
+		"name": "Organize Closet 1",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:1|"
+	},
+	{
+		"name": "Organize Closet 2",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:2|"
+	},
+	{
+		"name": "Organize Closet 3",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:3|"
+	},
+	{
+		"name": "Organize Closet 4",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:4|"
+	},
+	{
+		"name": "Organize Closet 5",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:5|"
+	},
+	{
+		"name": "Organize Closet 6",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Closet:6|"
+	},
+	{
+		"name": "Organize Bedroom 1",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:1|"
+	},
+	{
+		"name": "Organize Bedroom 2",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:2|"
+	},
+	{
+		"name": "Organize Bedroom 3",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:3|"
+	},
+	{
+		"name": "Organize Bedroom 4",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:4|"
+	},
+	{
+		"name": "Organize Bedroom 5",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:5|"
+	},
+	{
+		"name": "Organize Bedroom 6",
+		"category": ["Cleaning"],
+		"requires": "|Progressive Bedroom:6|"
+	},
+	{
+		"name": "Manual Docs 1",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:1|"
+	},
+	{
+		"name": "Manual Docs 2",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:2|"
+	},
+	{
+		"name": "Manual Docs 3",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:3|"
+	},
+	{
+		"name": "Manual Docs 4",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:4|"
+	},
+	{
+		"name": "Manual Docs 5",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:5|"
+	},
+	{
+		"name": "Manual Docs 6",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:6|"
+	},
+	{
+		"name": "Manual Docs 7",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:7|"
+	},
+	{
+		"name": "Manual Docs 8",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:8|"
+	},
+	{
+		"name": "Manual Docs 9",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:9|"
+	},
+	{
+		"name": "Manual Docs 10",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:10|"
+	},
+	{
+		"name": "Manual Docs 11",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:11|"
+	},
+	{
+		"name": "Manual Docs 12",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:12|"
+	},
+	{
+		"name": "Manual Docs 13",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:13|"
+	},
+	{
+		"name": "Manual Docs 14",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:14|"
+	},
+	{
+		"name": "Manual Docs 15",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:15|"
+	},
+	{
+		"name": "Manual Docs 16",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:16|"
+	},
+	{
+		"name": "Manual Docs 17",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:17|"
+	},
+	{
+		"name": "Manual Docs 18",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:18|"
+	},
+	{
+		"name": "Manual Docs 19",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:19|"
+	},
+	{
+		"name": "Manual Docs 20",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:20|"
+	},
+	{
+		"name": "Manual Fixes 1",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:1|"
+	},
+	{
+		"name": "Manual Fixes 2",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:2|"
+	},
+	{
+		"name": "Manual Fixes 3",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:3|"
+	},
+	{
+		"name": "Manual Fixes 4",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:4|"
+	},
+	{
+		"name": "Manual Fixes 5",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:5|"
+	},
+	{
+		"name": "Manual Fixes 6",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:6|"
+	},
+	{
+		"name": "Manual Fixes 7",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:7|"
+	},
+	{
+		"name": "Manual Fixes 8",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:8|"
+	},
+	{
+		"name": "Manual Fixes 9",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:9|"
+	},
+	{
+		"name": "Manual Fixes 10",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:10|"
+	},
+	{
+		"name": "Manual Fixes 11",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:11|"
+	},
+	{
+		"name": "Manual Fixes 12",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:12|"
+	},
+	{
+		"name": "Manual Fixes 13",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:13|"
+	},
+	{
+		"name": "Manual Fixes 14",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:14|"
+	},
+	{
+		"name": "Manual Fixes 15",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:15|"
+	},
+	{
+		"name": "Manual Fixes 16",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:16|"
+	},
+	{
+		"name": "Manual Fixes 17",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:17|"
+	},
+	{
+		"name": "Manual Fixes 18",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:18|"
+	},
+	{
+		"name": "Manual Fixes 19",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:19|"
+	},
+	{
+		"name": "Manual Fixes 20",
+		"category": ["Manual"],
+		"requires": "|Progressive Manual:20|"
+	},
+	{
+		"name": "Chapter 16",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:1|"
+	},
+	{
+		"name": "Chapter 17",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:1|"
+	},
+	{
+		"name": "Chapter 18",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:2|"
+	},
+	{
+		"name": "Chapter 19",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:2|"
+	},
+	{
+		"name": "Chapter 20",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:3|"
+	},
+	{
+		"name": "Chapter 21",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:3|"
+	},
+	{
+		"name": "Chapter 22",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:4|"
+	},
+	{
+		"name": "Chapter 23",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:4|"
+	},
+	{
+		"name": "Chapter 24",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:5|"
+	},
+	{
+		"name": "Chapter 25",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:5|"
+	},
+	{
+		"name": "Chapter 26",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:6|"
+	},
+	{
+		"name": "Chapter 27",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:6|"
+	},
+	{
+		"name": "Chapter 28",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:7|"
+	},
+	{
+		"name": "Chapter 29",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:7|"
+	},
+	{
+		"name": "Chapter 30",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:8|"
+	},
+	{
+		"name": "Chapter 31",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:8|"
+	},
+	{
+		"name": "Epilogue",
+		"category": ["Literature"],
+		"requires": "|Progressive Chapter:9|"
+	},
+	{
+		"name": "Knitting Progress 1",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 2",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 3",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 4",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 5",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 6",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 7",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 8",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 9",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "Knitting Progress 10",
+		"category": ["Knitting"],
+		"requires": []
+	},
+	{
+		"name": "German Set 1",
+		"category": ["German"],
+		"requires": "|Progressive German Study:1|"
+	},
+	{
+		"name": "German Set 2",
+		"category": ["German"],
+		"requires": "|Progressive German Study:1|"
+	},
+	{
+		"name": "German Set 3",
+		"category": ["German"],
+		"requires": "|Progressive German Study:2|"
+	},
+	{
+		"name": "German Set 4",
+		"category": ["German"],
+		"requires": "|Progressive German Study:2|"
+	},
+	{
+		"name": "German Set 5",
+		"category": ["German"],
+		"requires": "|Progressive German Study:3|"
+	},
+	{
+		"name": "German Set 6",
+		"category": ["German"],
+		"requires": "|Progressive German Study:3|"
+	},
+	{
+		"name": "German Set 7",
+		"category": ["German"],
+		"requires": "|Progressive German Study:4|"
+	},
+	{
+		"name": "German Set 8",
+		"category": ["German"],
+		"requires": "|Progressive German Study:4|"
+	},
+	{
+		"name": "German Set 9",
+		"category": ["German"],
+		"requires": "|Progressive German Study:5|"
+	},
+	{
+		"name": "German Set 10",
+		"category": ["German"],
+		"requires": "|Progressive German Study:5|"
+	},
+	{
+		"name": "German Set 11",
+		"category": ["Korean"],
+		"requires": "|Progressive German Study:6|"
+	},
+	{
+		"name": "German Set 12",
+		"category": ["German"],
+		"requires": "|Progressive German Study:6|"
+	},
+	{
+		"name": "German Set 13",
+		"category": ["German"],
+		"requires": "|Progressive German Study:7|"
+	},
+	{
+		"name": "German Set 14",
+		"category": ["German"],
+		"requires": "|Progressive German Study:7|"
+	},
+	{
+		"name": "German Set 15",
+		"category": ["German"],
+		"requires": "|Progressive German Study:8|"
+	},
+	{
+		"name": "German Set 16",
+		"category": ["German"],
+		"requires": "|Progressive German Study:8|"
+	},
+	{
+		"name": "German Set 17",
+		"category": ["German"],
+		"requires": "|Progressive German Study:9|"
+	},
+	{
+		"name": "German Set 18",
+		"category": ["German"],
+		"requires": "|Progressive German Study:9|"
+	},
+	{
+		"name": "German Set 19",
+		"category": ["German"],
+		"requires": "|Progressive German Study:10|"
+	},
+	{
+		"name": "German Set 20",
+		"category": ["German"],
+		"requires": "|Progressive German Study:10|"
+	},
+	{
+		"name": "Victory",
+		"victory": true,
+		"category": ["Victory"],
+		"requires": "|Victory|"
+	},
+	{
+		"name": "60 Productivity",
+		"category": ["Victory"],
+		"requires": "|Productivity:60|",
+		"place_item": ["Victory"]
+	},
+	{
+		"name": "Sealed Product 24",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:24|"
+	},
+	{
+		"name": "Deck-Booster 24",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:24|"
+	},
+	{
+		"name": "Sealed Product 25",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:25|"
+	},
+	{
+		"name": "Deck-Booster 25",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive MTGJSON:25|"
+	},
+	{
+		"name": "SLD Products 1",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:1|"
+	},
+	{
+		"name": "SLD Products 2",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:1|"
+	},
+	{
+		"name": "SLD Products 3",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:2|"
+	},
+	{
+		"name": "SLD Products 4",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:2|"
+	},
+	{
+		"name": "SLD Products 5",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:3|"
+	},
+	{
+		"name": "SLD Products 6",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:3|"
+	},
+	{
+		"name": "SLD Products 7",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:4|"
+	},
+	{
+		"name": "SLD Products 8",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:4|"
+	},
+	{
+		"name": "SLD Products 9",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:5|"
+	},
+	{
+		"name": "SLD Products 10",
+		"category": ["MTGJSON"],
+		"requires": "|Progressive SLD:5|"
+	}
+]

@@ -1,0 +1,74 @@
+[
+	{
+		"count": "25",
+		"name": "Progressive MTGJSON",
+		"category": ["MTGJSON"],
+		"progression": true
+	},
+	{
+		"count": "6",
+		"name": "Progressive Kitchen",
+		"category": ["Cleaning"],
+		"progression": true
+	},
+	{
+		"count": "6",
+		"name": "Progressive Office",
+		"category": ["Cleaning"],
+		"progression": true
+	},
+	{
+		"count": "6",
+		"name": "Progressive Closet",
+		"category": ["Cleaning"],
+		"progression": true
+	},
+	{
+		"count": "6",
+		"name": "Progressive Bedroom",
+		"category": ["Cleaning"],
+		"progression": true
+	},
+	{
+		"count": "20",
+		"name": "Progressive Manual",
+		"category": ["Manual"],
+		"progression": true
+	},
+	{
+		"count": "9",
+		"name": "Progressive Chapter",
+		"category": ["Literature"],
+		"progression": true
+	},
+	{
+		"count": "5",
+		"name": "Progressive SLD",
+		"category": ["MTGJSON"],
+		"progression": true
+	},
+	{
+		"count": "10",
+		"name": "Progressive German Study",
+		"category": ["German"],
+		"progression": true
+	},
+	{
+		"count": "60",
+		"name": "Productivity",
+		"category": ["Victory"],
+		"progression": true
+	},
+	{
+		"count":1,
+		"name": "Victory",
+		"category": ["Victory"],
+		"progression": true
+	},
+	{
+		"count": "5",
+		"name": "German Review Trap",
+		"category": ["Trap"],
+		"trap": true
+	}
+]
