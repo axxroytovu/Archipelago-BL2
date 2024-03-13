@@ -1,0 +1,495 @@
+﻿# Q. What is this file?
+# A. This file contains options which allow you to configure your multiworld experience while allowing
+#    others to play how they want as well.
+#
+# Q. How do I use it?
+# A. The options in this file are weighted. This means the higher number you assign to a value, the
+#    more chances you have for that option to be chosen. For example, an option like this:
+#
+#    map_shuffle:
+#      on: 5
+#      off: 15
+#
+#    Means you have 5 chances for map shuffle to occur, and 15 chances for map shuffle to be turned
+#    off.
+#
+# Q. I've never seen a file like this before. What characters am I allowed to use?
+# A. This is a .yaml file. You are allowed to use most characters.
+#    To test if your yaml is valid or not, you can use this website:
+#        http://www.yamllint.com/
+#    You can also verify your Archipelago settings are valid at this site:
+#        https://archipelago.gg/check
+
+# Your name in-game. Spaces will be replaced with underscores and there is a 16-character limit.
+#     {player} will be replaced with the player's slot number.
+#     {PLAYER} will be replaced with the player's slot number, if that slot number is greater than 1.
+#     {number} will be replaced with the counter value of the name.
+#     {NUMBER} will be replaced with the counter value of the name, if the counter value is greater than 1.
+name: RazzoPKMN_E
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Pokemon Emerald Template
+
+game: Pokemon Emerald
+requires:
+  version: 0.4.4 # Version of Archipelago required for this yaml to work as expected.
+
+Pokemon Emerald:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  goal:
+    # Determines what your goal is to consider the game beaten
+    # 
+    # Champion: Become the champion and enter the hall of fame
+    # Steven: Defeat Steven in Meteor Falls
+    # Norman: Defeat Norman in Petalburg Gym
+    champion: 50
+    steven: 0
+    norman: 0
+
+  badges:
+    # Adds Badges to the pool
+    # 
+    # Vanilla: Gym leaders give their own badge
+    # Shuffle: Gym leaders give a random badge
+    # Completely Random: Badges can be found anywhere
+    vanilla: 0
+    shuffle: 0
+    completely_random: 50
+
+  hms:
+    # Adds HMs to the pool
+    # 
+    # Vanilla: HMs are at their vanilla locations
+    # Shuffle: HMs are shuffled among vanilla HM locations
+    # Completely Random: HMs can be found anywhere
+    vanilla: 0
+    shuffle: 0
+    completely_random: 50
+
+  key_items:
+    # Adds most key items to the pool. These are usually required to unlock
+    # a location or region (e.g. Devon Scope, Letter, Basement Key)
+    false: 0
+    true: 50
+
+  bikes:
+    # Adds the mach bike and acro bike to the pool
+    false: 0
+    true: 50
+
+  rods:
+    # Adds fishing rods to the pool
+    false: 0
+    true: 50
+
+  overworld_items:
+    # Adds items on the ground with a Pokeball sprite to the pool
+    false: 0
+    true: 50
+
+  hidden_items:
+    # Adds hidden items to the pool
+    false: 0
+    true: 50
+
+  npc_gifts:
+    # Adds most gifts received from NPCs to the pool (not including key items or HMs)
+    false: 0
+    true: 50
+
+  item_pool_type:
+    # Determines which non-progression items get put into the item pool
+    # 
+    # Shuffled: Item pool consists of shuffled vanilla items
+    # Diverse Balanced: Item pool consists of random items approximately proportioned
+    # according to what they're replacing (i.e. more pokeballs, fewer X items, etc...)
+    # Diverse: Item pool consists of uniformly random (non-unique) items
+    shuffled: 50
+    diverse_balanced: 0
+    diverse: 0
+
+  require_itemfinder:
+    # The Itemfinder is logically required to pick up hidden items
+    false: 0
+    true: 50
+
+  require_flash:
+    # The lower floors of Granite Cave and Victory Road logically require use of HM05 Flash
+    false: 0
+    true: 50
+
+  elite_four_requirement:
+    # Sets the requirements to challenge the elite four
+    # 
+    # Badges: Obtain some number of badges
+    # Gyms: Defeat some number of gyms
+    badges: 0
+    gyms: 50
+
+  elite_four_count:
+    # Sets the number of badges/gyms required to challenge the elite four
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 8
+    8: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  norman_requirement:
+    # Sets the requirements to challenge the Petalburg Gym
+    # 
+    # Badges: Obtain some number of badges
+    # Gyms: Defeat some number of gyms
+    badges: 50
+    gyms: 0
+
+  norman_count:
+    # Sets the number of badges/gyms required to challenge the Petalburg Gym
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 7
+    4: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  wild_pokemon:
+    # Randomizes wild pokemon encounters (grass, caves, water, fishing)
+    # 
+    # Vanilla: Wild encounters are unchanged
+    # Match Base Stats: Wild pokemon are replaced with species with approximately the same bst
+    # Match Type: Wild pokemon are replaced with species that share a type with the original
+    # Match Base Stats and Type: Apply both Match Base Stats and Match Type
+    # Completely Random: There are no restrictions
+    vanilla: 0
+    match_base_stats: 0
+    match_type: 0
+    match_base_stats_and_type: 0
+    completely_random: 50
+
+  allow_wild_legendaries:
+    # Wild encounters can be replaced by legendaries. Only applied if Randomize Wild Pokemon is not Vanilla.
+    false: 0
+    true: 50
+
+  starters:
+    # Randomizes the starter pokemon in Professor Birch's bag
+    # 
+    # Vanilla: Starters are unchanged
+    # Match Base Stats: Starters are replaced with species with approximately the same bst
+    # Match Type: Starters are replaced with species that share a type with the original
+    # Match Base Stats and Type: Apply both Match Base Stats and Match Type
+    # Completely Random: There are no restrictions
+    vanilla: 0
+    match_base_stats: 0
+    match_type: 0
+    match_base_stats_and_type: 0
+    completely_random: 50
+
+  allow_starter_legendaries:
+    # Starters can be replaced by legendaries. Only applied if Randomize Starters is not Vanilla.
+    false: 0
+    true: 50
+
+  trainer_parties:
+    # Randomizes the parties of all trainers.
+    # 
+    # Vanilla: Parties are unchanged
+    # Match Base Stats: Trainer pokemon are replaced with species with approximately the same bst
+    # Match Type: Trainer pokemon are replaced with species that share a type with the original
+    # Match Base Stats and Type: Apply both Match Base Stats and Match Type
+    # Completely Random: There are no restrictions
+    vanilla: 0
+    match_base_stats: 0
+    match_type: 0
+    match_base_stats_and_type: 0
+    completely_random: 50
+
+  allow_trainer_legendaries:
+    # Enemy trainer pokemon can be replaced by legendaries. Only applied if Randomize Trainer Parties is not Vanilla.
+    false: 0
+    true: 50
+
+  static_encounters:
+    # Randomizes static encounters (Rayquaza, hidden Kekleons, fake Voltorb pokeballs, etc...)
+    # 
+    # Vanilla: Static encounters are unchanged
+    # Shuffle: Static encounters are shuffled between each other
+    # Match Base Stats: Static encounters are replaced with species with approximately the same bst
+    # Match Type: Static encounters are replaced with species that share a type with the original
+    # Match Base Stats and Type: Apply both Match Base Stats and Match Type
+    # Completely Random: There are no restrictions
+    vanilla: 0
+    shuffle: 0
+    match_base_stats: 0
+    match_type: 0
+    match_base_stats_and_type: 0
+    completely_random: 50
+
+  types:
+    # Randomizes the type(s) of every pokemon. Each species will have the same number of types.
+    # 
+    # Vanilla: Types are unchanged
+    # Shuffle: Types are shuffled globally for all species (e.g. every Water-type pokemon becomes Fire-type)
+    # Completely Random: Each species has its type(s) randomized
+    # Follow Evolutions: Types are randomized per evolution line instead of per species
+    vanilla: 0
+    shuffle: 0
+    completely_random: 50
+    follow_evolutions: 0
+
+  abilities:
+    # Randomizes abilities of every species. Each species will have the same number of abilities.
+    # 
+    # Vanilla: Abilities are unchanged
+    # Completely Random: Each species has its abilities randomized
+    # Follow Evolutions: Abilities are randomized, but if a pokemon would normally retain its ability
+    # when evolving, the random ability will also be retained
+    vanilla: 0
+    completely_random: 50
+    follow_evolutions: 0
+
+  ability_blacklist:
+    # A list of abilities which no pokemon should have if abilities are randomized.
+    # For example, you could exclude Wonder Guard and Arena Trap like this:
+    # ["Wonder Guard", "Arena Trap"]
+    []
+
+  level_up_moves:
+    # Randomizes the moves a pokemon learns when they reach a level where they would learn a move.
+    # Your starter is guaranteed to have a usable damaging move.
+    # 
+    # Vanilla: Learnset is unchanged
+    # Randomized: Moves are randomized
+    # Start with Four Moves: Moves are randomized and all Pokemon know 4 moves at level 1
+    vanilla: 0
+    randomized: 0
+    start_with_four_moves: 50
+
+  move_match_type_bias:
+    # Sets the probability that a learned move will be forced match one of the types of a pokemon.
+    # 
+    # If a move is not forced to match type, it will roll for Normal type bias.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  move_normal_type_bias:
+    # After it has been decided that a move will not be forced to match types, sets the probability that a learned move
+    # will be forced to be the Normal type.
+    # 
+    # If a move is not forced to be Normal, it will be completely random.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  tm_compatibility:
+    # Modifies the compatibility of TMs
+    # 
+    # Vanilla: Compatibility is unchanged
+    # Fully Compatible: Every species can learn any TM
+    # Completely Random: Compatibility is 50/50 for every TM (does not remain consistent across evolution)
+    vanilla: 50
+    fully_compatible: 0
+    completely_random: 0
+
+  hm_compatibility:
+    # Modifies the compatibility of HMs
+    # 
+    # Vanilla: Compatibility is unchanged
+    # Fully Compatible: Every species can learn any HM
+    # Completely Random: Compatibility is 50/50 for every HM (does not remain consistent across evolution)
+    vanilla: 0
+    fully_compatible: 50
+    completely_random: 0
+
+  tm_moves:
+    # Randomizes the moves taught by TMs
+    false: 50
+    true: 0
+
+  reusable_tms:
+    # Sets TMs to not break after use (they remain sellable)
+    false: 50
+    true: 0
+
+  min_catch_rate:
+    # Sets the minimum catch rate a pokemon can have. Any pokemon with a catch rate below this floor will have it raised to this value.
+    # 
+    # Legendaries are often in the single digits
+    # Fully evolved pokemon are often double digits
+    # Pidgey is 255
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 3
+    # Maximum value is 255
+    3: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  guaranteed_catch:
+    # Every throw is guaranteed to catch a wild pokemon
+    false: 50
+    true: 0
+
+  exp_modifier:
+    # Multiplies gained experience by a percentage
+    # 
+    # 100 is default
+    # 50 is half
+    # 200 is double
+    # etc...
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 1000
+    100: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  blind_trainers:
+    # Causes trainers to not start a battle with you unless you talk to them
+    false: 50
+    true: 0
+
+  double_battle_chance:
+    # The percent chance that a trainer with more than 1 pokemon will be converted into a double battle.
+    # If these trainers would normally approach you, they will only do so if you have 2 unfainted pokemon.
+    # They can be battled by talking to them no matter what.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  better_shops:
+    # Pokemarts sell every item that can be obtained in a pokemart (except mail, which is still unique to the relevant city)
+    false: 50
+    true: 0
+
+  enable_ferry:
+    # The ferry between Slateport, Lilycove, and the Battle Frontier can be used if you have the S.S. Ticket
+    false: 0
+    true: 50
+
+  remove_roadblocks:
+    # Removes specific NPCs that normally stand in your way until certain events are completed.
+    # 
+    # This can open up the world a bit and make your playthrough less linear, but careful how many you remove; it may make too much of your world accessible upon receiving Surf.
+    # 
+    # Possible values are:
+    # "Route 110 Aqua Grunts"
+    # "Route 112 Magma Grunts"
+    # "Route 119 Aqua Grunts"
+    # "Safari Zone Construction Workers"
+    # "Lilycove City Wailmer"
+    # "Aqua Hideout Grunts"
+    # "Seafloor Cavern Aqua Grunt"
+    []
+
+  extra_boulders:
+    # Places strength boulders on Route 115 which block access to Meteor Falls from the beach.
+    # This aims to take some power away from Surf as a tool for access.
+    false: 50
+    true: 0
+
+  free_fly_location:
+    # Enables flying to one random location when Mom gives you the running shoes (excluding cities reachable with no items)
+    false: 50
+    true: 0
+
+  fly_without_badge:
+    # Fly does not require the Feather Badge to use in the field
+    false: 0
+    true: 50
+
+  turbo_a:
+    # Holding A will advance most text automatically
+    false: 0
+    true: 50
+
+  receive_item_messages:
+    # Determines whether you receive an in-game notification when receiving an item. Items can still only be received in the overworld.
+    # 
+    # All: Every item shows a message
+    # Progression: Only progression items show a message
+    # None: All items are added to your bag silently (badges will still show)
+    all: 50
+    progression: 0
+    none: 0
+
+  easter_egg:
+    # ???
+    Example Passphrase: 50

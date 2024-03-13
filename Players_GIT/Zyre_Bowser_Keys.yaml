@@ -132,9 +132,13 @@ Links Awakening DX:
   accessibility: items
   logic: normal
   tradequest: 'false'
+  single_entrance_shuffle: vanilla
+  dummy_entrance_shuffle: vanilla
+  annoying_entrance_shuffle: vanilla
+  water_entrance_shuffle: vanilla
+  connector_entrance_shuffle: vanilla
+  dungeon_entrance_shuffle: vanilla
   rooster: 'true'
-  experimental_dungeon_shuffle: 'false'
-  experimental_entrance_shuffle: none
   goal: instruments
   instrument_count: 8
   link_palette: normal

@@ -1,0 +1,704 @@
+name: RezalexSMW
+description: Bowser's Key Hunt SMW YAML
+
+game: Super Mario World
+requires:
+  version: 0.4.4 # Version of Archipelago required for this yaml to work as expected.
+
+Super Mario World:
+  progression_balancing:
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    false: 50
+    true: 0
+
+  goal:
+    # Determines the goal of the seed
+    # Bowser: Defeat Koopalings, reach Bowser's Castle and defeat Bowser
+    # Yoshi Egg Hunt: Find a certain number of Yoshi Eggs
+    bowser: 50
+    yoshi_egg_hunt: 0
+
+  bosses_required:
+    # How many Bosses (Koopalings or Reznor) must be defeated in order to defeat Bowser
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 11
+    7: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  max_yoshi_egg_cap:
+    # Maximum possible number of Yoshi Eggs that will be in the item pool
+    # If fewer available locations exist in the pool than this number, the number of available locations will be used instead.
+    # Required Percentage of Yoshi Eggs will be calculated based off of that number.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 255
+    50: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  percentage_of_yoshi_eggs:
+    # What Percentage of Yoshi Eggs are required to finish Yoshi Egg Hunt
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 100
+    100: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  dragon_coin_checks:
+    # Whether collecting 5 Dragon Coins in each level will grant a check
+    false: 50
+    true: 0
+
+  moon_checks:
+    # Whether collecting a 3-Up Moon in a level will grant a check
+    false: 50
+    true: 0
+
+  hidden_1up_checks:
+    # Whether collecting a hidden 1-Up mushroom in a level will grant a check
+    # These checks are considered cryptic as there's no actual indicator that they're in their respective places
+    # Enable this option at your own risk
+    false: 50
+    true: 0
+
+  bonus_block_checks:
+    # Whether collecting a 1-Up mushroom from a Bonus Block in a level will grant a check
+    false: 50
+    true: 0
+
+  blocksanity:
+    # Whether hitting a block with an item or coin inside will grant a check
+    # Note that some blocks are excluded due to how the option and the game works!
+    # Exclusion list:
+    #   * Blocks in Top Secret Area & Front Door/Bowser Castle
+    #   * Blocks that are unreachable unless you glitch your way in
+    false: 50
+    true: 0
+
+  bowser_castle_doors:
+    # How the doors of Bowser's Castle behave
+    # Vanilla: Front and Back Doors behave as vanilla
+    # Fast: Both doors behave as the Back Door
+    # Slow: Both doors behave as the Front Door
+    # "Front Door" rooms depend on the `bowser_castle_rooms` option
+    # "Back Door" only requires going through the dark hallway to Bowser
+    vanilla: 50
+    fast: 0
+    slow: 0
+
+  bowser_castle_rooms:
+    # How the rooms of Bowser's Castle Front Door behave
+    # Vanilla: You can choose which rooms to enter, as in vanilla
+    # Random Two Room: Two random rooms are chosen
+    # Random Five Room: Five random rooms are chosen
+    # Gauntlet: All eight rooms must be cleared
+    # Labyrinth: Which room leads to Bowser?
+    vanilla: 0
+    random_two_room: 50
+    random_five_room: 0
+    gauntlet: 0
+    labyrinth: 0
+
+  level_shuffle:
+    # Whether levels are shuffled
+    false: 50
+    true: 0
+
+  exclude_special_zone:
+    # If active, this option will prevent any progression items from being placed in Special Zone levels.
+    # Additionally, if Level Shuffle is active, Special Zone levels will not be shuffled away from their vanilla tiles.
+    false: 0
+    true: 50
+
+  boss_shuffle:
+    # How bosses are shuffled
+    # None: Bosses are not shuffled
+    # Simple: Four Reznors and the seven Koopalings are shuffled around
+    # Full: Each boss location gets a fully random boss
+    # Singularity: One or two bosses are chosen and placed at every boss location
+    none: 50
+    simple: 0
+    full: 0
+    singularity: 0
+
+  swap_donut_gh_exits:
+    # If enabled, this option will swap which overworld direction the two exits of the level at the Donut Ghost House
+    #     overworld tile go:
+    # False: Normal Exit goes up, Secret Exit goes right.
+    # True: Normal Exit goes right, Secret Exit goes up.
+    false: 50
+    true: 0
+
+  display_received_item_popups:
+    # What messages to display in-game for items received
+    none: 0
+    all: 0
+    progression: 50
+    progression_minus_yoshi_eggs: 0
+
+  junk_fill_percentage:
+    # Replace a percentage of non-required Yoshi Eggs in the item pool with random junk items (only applicable on Yoshi Egg Hunt goal)
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    0: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  trap_fill_percentage:
+    # Replace a percentage of junk items in the item pool with random traps
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    50: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  ice_trap_weight:
+    # Likelihood of a receiving a trap which causes the level to become slippery
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  stun_trap_weight:
+    # Likelihood of a receiving a trap which briefly stuns Mario
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  literature_trap_weight:
+    # Likelihood of a receiving a trap which causes the player to read literature
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  timer_trap_weight:
+    # Likelihood of a receiving a trap which causes the timer to run low
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  reverse_trap_weight:
+    # Likelihood of a receiving a trap which causes the controls to be reversed in the current level
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  thwimp_trap_weight:
+    # Likelihood of a receiving a trap which causes a Thwimp to spawn above the player
+    none: 0
+    low: 0
+    medium: 50
+    high: 0
+
+  autosave:
+    # Whether a save prompt will appear after every level
+    false: 0
+    true: 50
+
+  early_climb:
+    # Force Climb to appear early in the seed as a local item.
+    # This is particularly useful to prevent BK when Level Shuffle is disabled
+    false: 0
+    true: 50
+
+  overworld_speed:
+    # How fast Mario moves on the overworld
+    slow: 0
+    vanilla: 50
+    fast: 0
+
+  music_shuffle:
+    # Music shuffle type
+    # None: No Music is shuffled
+    # Consistent: Each music track is consistently shuffled throughout the game
+    # Full: Each individual level has a random music track
+    # Singularity: The entire game uses one song for overworld and one song for levels
+    none: 50
+    consistent: 0
+    full: 0
+    singularity: 0
+
+  sfx_shuffle:
+    # Shuffles almost every instance of sound effect playback
+    # Archipelago elements that play sound effects aren't randomized
+    # None: No SFX are shuffled
+    # Full: Each individual SFX call has a random SFX
+    # Singularity: The entire game uses one SFX for every SFX call
+    none: 50
+    full: 0
+    singularity: 0
+
+  mario_palette:
+    # Mario palette color
+    mario: 0
+    luigi: 50
+    wario: 0
+    waluigi: 0
+    geno: 0
+    princess: 0
+    dark: 0
+    sponge: 0
+
+  level_palette_shuffle:
+    # Whether to shuffle level palettes
+    # off: Do not shuffle palettes
+    # on_legacy: Uses only the palette sets from the original game
+    # on_curated: Uses custom palette sets created by some people
+    #             Setting this option will also force Backgrounds to use those palettes
+    off: 50
+    on_legacy: 0
+    on_curated: 0
+
+  overworld_palette_shuffle:
+    # Whether to shuffle overworld palettes
+    # off: Do not shuffle palettes
+    # on_legacy: Uses only the palette sets from the original game
+    # on_curated: Uses custom palette sets created by some people
+    off: 50
+    on_legacy: 0
+    on_curated: 0
+
+  starting_life_count:
+    # How many extra lives to start the game with
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 1
+    # Maximum value is 99
+    5: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+---
+
+name: RezalexALTTP
+description: Bowser's Key Hunt ALTTP YAML
+game: 
+  A Link to the Past: 1
+requires:
+  version: 0.4.4
+  
+A Link to the Past:
+  progression_balancing:
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 1 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 1
+    minimal: 0
+    
+  entrance_shuffle:
+    none: 0 # Vanilla game map. All entrances and exits lead to their original locations. You probably want this option
+    dungeonssimple: 0 # Shuffle just dungeons amongst each other, swapping dungeons entirely, so Hyrule Castle is always 1 dungeon
+    dungeonsfull: 0 # Shuffle any dungeon entrance with any dungeon interior, so Hyrule Castle can be 4 different dungeons, but keep dungeons to a specific world
+    dungeonscrossed: 0 # like dungeonsfull, but allow cross-world traversal through a dungeon. Warning: May force repeated dungeon traversal
+    simple: 0 # Entrances are grouped together before being randomized. Simple uses the most strict grouping rules
+    restricted: 0 # Less strict than simple
+    full: 0 # Less strict than restricted
+    crossed: 1 # Less strict than full
+    
+  goals:
+    ganon: 1 # Climb GT, defeat Agahnim 2, and then kill Ganon
+    crystals: 0 # Only killing Ganon is required. However, items may still be placed in GT
+    bosses: 0 # Defeat the boss of all dungeons, including Agahnim's tower and GT (Aga 2)
+    pedestal: 0 # Pull the Triforce from the Master Sword pedestal
+    ganon_pedestal: 0 # Pull the Master Sword pedestal, then kill Ganon
+    triforce_hunt: 0 # Collect 20 of 30 Triforce pieces spread throughout the worlds, then turn them in to Murahadala in front of Hyrule Castle
+    local_triforce_hunt: 0 # Collect 20 of 30 Triforce pieces spread throughout your world, then turn them in to Murahadala in front of Hyrule Castle
+    ganon_triforce_hunt: 0 # Collect 20 of 30 Triforce pieces spread throughout the worlds, then kill Ganon
+    local_ganon_triforce_hunt: 0 # Collect 20 of 30 Triforce pieces spread throughout your world, then kill Ganon
+    
+  crystals_needed_for_gt:
+    7: 1
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  crystals_needed_for_ganon:
+    7: 1
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  open_pyramid:
+    # Determines whether the hole at the top of pyramid is open.
+    # Goal will open the pyramid if the goal requires you to kill Ganon, without needing to kill Agahnim 2.
+    # Auto is the same as goal except if Ganon's dropdown is in another location, the hole will be closed.
+    closed: 0
+    open: 1
+    goal: 0
+    auto: 0
+
+  bigkey_shuffle:
+    # Big Key Placement
+    original_dungeon: 0
+    own_dungeons: 0
+    own_world: 0
+    any_world: 1
+    different_world: 0
+    start_with: 0
+
+  smallkey_shuffle:
+    # Small Key Placement
+    original_dungeon: 0
+    own_dungeons: 0
+    own_world: 0
+    any_world: 1
+    different_world: 0
+    start_with: 0
+    universal: 0
+
+  key_drop_shuffle:
+    # Shuffle keys found in pots and dropped from killed enemies,
+    # respects the small key and big key shuffle options.
+    false: 1
+    true: 0
+
+  compass_shuffle:
+    # Compass Placement
+    original_dungeon: 0
+    own_dungeons: 0
+    own_world: 0
+    any_world: 0
+    different_world: 0
+    start_with: 1
+
+  map_shuffle:
+    # Map Placement
+    original_dungeon: 0
+    own_dungeons: 0
+    own_world: 0
+    any_world: 0
+    different_world: 0
+    start_with: 1
+
+  progressive:
+    # How item types that have multiple tiers (armor, bows, gloves, shields, and swords) should be rewarded
+    off: 0
+    grouped_random: 0
+    on: 1
+
+  swordless:
+    # No swords. Curtains in Skull Woods and Agahnim's
+    # Tower are removed, Agahnim's Tower barrier can be
+    # destroyed with hammer. Misery Mire and Turtle Rock
+    # can be opened without a sword. Hammer damages Ganon.
+    # Ether and Bombos Tablet can be activated with Hammer
+    # (and Book).
+    false: 50
+    true: 0
+
+  retro_bow:
+    # Zelda-1 like mode. You have to purchase a quiver to shoot arrows using rupees.
+    false: 50
+    true: 0
+
+  retro_caves:
+    # Zelda-1 like mode. There are randomly placed take-any caves that contain one Sword and
+    # choices of Heart Container/Blue Potion.
+    false: 50
+    true: 0
+
+  hints:
+    # On/Full: Put item and entrance placement hints on telepathic tiles and some NPCs, Full removes joke hints.
+    off: 0
+    on: 1
+    full: 0
+
+  scams:
+    # If on, these Merchants will no longer tell you what they're selling.
+    off: 0
+    king_zora: 0
+    bottle_merchant: 0
+    all: 1
+
+  restrict_dungeon_item_on_boss:
+    # Don't place dungeon-native items on the dungeon's boss.
+    false: 1
+    true: 0
+    
+  boss_shuffle:
+    # Shuffles bosses around to different locations.
+    # Basic will shuffle all bosses except Ganon and Agahnim anywhere they can be placed.
+    # Full chooses 3 bosses at random to be placed twice instead of Lanmolas, Moldorm, and Helmasaur.
+    # Chaos allows any boss to appear any number of times.
+    # Singularity places a single boss in as many places as possible, and a second boss in any remaining locations.
+    # Supports plando placement.
+    none: 1
+    basic: 0
+    full: 0
+    chaos: 0
+    singularity: 0
+
+  pot_shuffle:
+    # Shuffle contents of pots within "supertiles" (item will still be nearby original placement).
+    false: 1
+    true: 0
+
+  enemy_shuffle:
+    # Randomize every enemy spawn.
+    # If mode is Standard, Hyrule Castle is left out (may result in visually wrong enemy sprites in that area.)
+    false: 1
+    true: 0
+
+  killable_thieves:
+    # Makes Thieves killable.
+    false: 0
+    true: 1
+
+  bush_shuffle:
+    # Randomize chance that a bush contains an enemy as well as which enemy may spawn.
+    false: 50
+    true: 0
+
+  shop_item_slots:
+    # Number of slots in all shops available to have items from the multiworld
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 30
+    0: 0
+    2: 1
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  shop_price_modifier:
+    # Percentage modifier for shuffled item prices in shops
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 400
+    100: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  tile_shuffle:
+    # Randomize flying tiles floor patterns.
+    false: 0
+    true: 50
+
+  ow_palettes:
+    # The type of palette shuffle to use for the overworld
+    default: 50
+    good: 0
+    blackout: 0
+    puke: 0
+    classic: 0
+    grayscale: 0
+    negative: 0
+    dizzy: 0
+    sick: 0
+
+  uw_palettes:
+    # The type of palette shuffle to use for the underworld (caves, dungeons, etc.)
+    default: 50
+    good: 0
+    blackout: 0
+    puke: 0
+    classic: 0
+    grayscale: 0
+    negative: 0
+    dizzy: 0
+    sick: 0
+
+  hud_palettes:
+    # The type of palette shuffle to use for the HUD
+    default: 50
+    good: 0
+    blackout: 0
+    puke: 0
+    classic: 0
+    grayscale: 0
+    negative: 0
+    dizzy: 0
+    sick: 0
+
+  sword_palettes:
+    # The type of palette shuffle to use for the sword
+    default: 50
+    good: 0
+    blackout: 0
+    puke: 0
+    classic: 0
+    grayscale: 0
+    negative: 0
+    dizzy: 0
+    sick: 0
+
+  shield_palettes:
+    # The type of palette shuffle to use for the shield
+    default: 50
+    good: 0
+    blackout: 0
+    puke: 0
+    classic: 0
+    grayscale: 0
+    negative: 0
+    dizzy: 0
+    sick: 0
+
+  heartbeep:
+    # How quickly the heart beep sound effect will play
+    normal: 0
+    double: 0
+    half: 0
+    quarter: 50
+    off: 0
+
+  heartcolor:
+    # The color of hearts in the HUD
+    red: 50
+    blue: 0
+    green: 0
+    yellow: 0
+
+  quickswap:
+    # Allows you to quickly swap items while playing with L/R
+    false: 0
+    true: 50
+
+  menuspeed:
+    # How quickly the menu appears/disappears
+    normal: 50
+    instant: 0
+    double: 0
+    triple: 0
+    quadruple: 0
+    half: 0
+
+  music:
+    # Whether background music will play in game
+    false: 0
+    true: 50
+
+  reduceflashing:
+    # Reduces flashing for certain scenes such as the Misery Mire and Ganon's Tower opening cutscenes
+    false: 0
+    true: 50
+
+  triforcehud:
+    # When and how the triforce hunt HUD should display
+    normal: 50
+    hide_goal: 0
+    hide_required: 0
+    hide_both: 0
+
+  glitch_boots:
+    # If this is enabled, the player will start with Pegasus Boots when playing with overworld glitches or harder logic.
+    false: 0
+    true: 50
+
+  beemizer_total_chance:
+    # Percentage chance for each junk-fill item (rupees, bombs, arrows) to be
+    # replaced with either a bee swarm trap or a single bottle-filling bee.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    50: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  beemizer_trap_chance:
+    # Percentage chance for each replaced junk-fill item to be a bee swarm
+    # trap; all other replaced items are single bottle-filling bees.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 100
+    60: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    false: 50
+    true: 0
+
+  allow_collect:
+    # Allows for !collect / co-op to auto-open chests containing items for other players.
+    # Off by default, because it currently crashes on real hardware.
+    false: 50
+    true: 0
+
+  start_inventory_from_pool:
+    # Start with these items and don't place them in the world.
+    # The game decides what the replacement items will be.
+    {}

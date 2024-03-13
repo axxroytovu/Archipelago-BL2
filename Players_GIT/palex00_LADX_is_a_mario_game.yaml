@@ -1,0 +1,49 @@
+﻿---
+name: palex00_LADX
+description: Default Links Awakening DX Template
+game: Links Awakening DX
+requires:
+  version: 0.4.4
+Links Awakening DX:
+  progression_balancing: normal
+  accessibility: minimal
+  local_items: ["Progressive Power Bracelet"]
+  non_local_items: []
+  start_inventory: {}
+  start_hints: []
+  start_location_hints: []
+  exclude_locations: []
+  priority_locations: []
+  item_links: []
+  logic: normal
+  tradequest: true
+  rooster: true
+  start_shuffle: []
+  single_entrance_shuffle: mixed
+  dummy_entrance_shuffle: mixed
+  annoying_entrance_shuffle: vanilla
+  water_entrance_shuffle: vanilla
+  connector_entrance_shuffle: mixed
+  dungeon_entrance_shuffle: mixed
+  goal:
+    instruments: 50
+    seashells: 50
+    open: 1
+  instrument_count: 6
+  link_palette: normal
+  warp_improvements: true
+  additional_warp_points: true
+  trendy_game: easy
+  gfxmod: Link
+  palette: normal
+  text_shuffle: false
+  shuffle_nightmare_keys: different_world
+  shuffle_small_keys: original_dungeon
+  shuffle_maps: different_world
+  shuffle_compasses: different_world
+  shuffle_stone_beaks: different_world
+  music: shuffled
+  music_change_condition: always
+  nag_messages: false
+  ap_title_screen: true
+  tarin_gifts_your_item: true

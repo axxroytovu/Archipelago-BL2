@@ -1,0 +1,398 @@
+#                                                                             ---                                                                                               
+#                                                                            -:::-                                                                                              
+#                                                                           --::::-                                                                                             
+#                                                                           -::::::-:                                                                                           
+#                                                                          -:::::::---                                                                                          
+#                                                                         --::::::::---                                                                                         
+#                                                                         -::::::::::---                                                                                        
+#                                                                         -::::::---::--                                                                                        
+#                                                                        -::::::-----::--                                                                                       
+#                                                                        -:::::-------:-=-                                                                                 ---- 
+#                                                                       :-:::::-----------:                                                                              -=:::- 
+#                                                                       -::::::------------:                                                                           -=-::::- 
+#                                                                       -:::::------------=:                                                                         --*-:::::- 
+#                        :--+#%@@@@@@@@%#+--:                          --::::--------------=-                                                                       -*--:---::-:
+#                   --+%@@@%%%%@@@@@@@@@@@@@@@%+--                     -::::----------------:                                                                     -=*--:----:::-
+#                --*@%%##**#%%%%%%%%%%%%%####%%%%%%+-                  -:::-----------------=:                                                                   -#---:-----:::-
+#              -=%#*+=====%%%%%%%%%%%%=-====++****##%%=-               -:::-------------------                                                                 -=*----------:::-
+#            -=#=-------=%##%%%%%%%#:::::::::----=++**#%+-             -::-------==+*##%%%%#*+:                                                               -#=-----------:::-
+#            -----------%##%###%#%+:::::::::::::::--==+*##=-           -::--*%%%%%%%%%%%%#####-                                                              -#-------------:::-
+#             -:-------=##%#%###%--:::::::::::::::::::-=++*#-          --%#%%%%%%%%%%%%%%%####*:                                                           :=*--------------:::-
+#              -:------#########=----:::::::::::::::::::-=+**--        -###%%%%%%%%%%%%%%%%####:                                                          -+*---------------:::-
+#               -:-----########%------::::::::::::::::::::-=+*=-       -###%%%%%%%%%%%%%%%%####+:                                                        -++----------------::: 
+#                --:---*#######+-------:::::::::::::::::::::-=++-      -*###%%%%%%%%%%%%%%%%###*-                                                       -*+-----------------::: 
+#                  --:--#######=----------:::::::::::::::::::-=+=-      =###%%%%%%%%%%%%%%%%####-                                                      -*+=-----------------::: 
+#                    ----######=----------------:::::::::::::::-=--     -###%%%%%%%%%%%%%%%%%%%%=-                                                    -#@%%%%%%%#=----------::: 
+#                       -:%#####--------------------::::::::::::-=-     -###%%%%%%#*=--======-----                                                   -#@%%%%%%%%%%%%%+------::- 
+#                         :-####+-:::-----------------:::::::::::-=-     =##%*=-============------                                                  -+@%%%%%%%%%%%%%%%%%+---::  
+#                           -:-*##:::::::----------------:::::::::---    -*-------=========-------                                                 -=@%%%%%%%%%%%%%%%%%####:::  
+#                               ::=+:::::::--------------::::::::::-:    -:---------========-------                                                -@%%%%%%%%%%%%%%%%%######:   
+#                                   :-:::::::::------------::::::::::-    ::-------=========-------                                               -%@%%%%%%%%%%%%%%%%######+:   
+#                                       :-:::::::-----------::::::::::    :::------==========------                                              -*#*+*#%%%%%%%%%%%%#######:    
+#                                          -::::::----------::::::::::     ::------==========------                                             :=+-=---====+%%%%%%%######:-    
+#                                             --:::::--------::::::::::     ::------==========-----                                             -*--------======*%%######*:     
+#                                                ::::::------::::::::::     ::------===========----                                            -==--------=========+%####:      
+#                                                   :::::::::::::::::::      ::-----===========----                                            -*---------========---+##:       
+#                                                      :::::::::::::::::::    ::-----==========----:                                          -+---------======-------=:        
+#                                                    ::::::::::::::::::::::::  ::----===========----                                          -+--------========------:-        
+#                                                 ::::::::::::::::::::::::::::: ::----==========----                                         -+-------=========------::         
+#                                      -::-+#%@@%-:::::::::::::::::::::::::::::::::---==========----    -:-+*#%%%%%%%#*+-:-                  -=------=========-----::           
+#                                 -:-*%@@%%#*+=--:::::::::::::::::::::::::::::::::-:---==========----=#%%#######*******###%#*--             :*------=========-----::            
+#                              --+@@%%#+=-----:::::::::::-----:::::::::::::::::::::::---=========--###*****++++==========++**###--          :=-----=========-----::             
+#                            -=@%#+---------:::::::::--:-------:::::::::::::::::::::::---=========-=+=-----------------------==+*#*--      :*-----==========----::              
+#                          -+@+----:::::::::::-:----:------------:::::::::::::::::::::----========--:::--------------------------=+*#-:    :-----=========-----:                
+#                         -%--::::::::::::::---------------------::::::::::::::::::::::----=======--:--------------------------------+#-: :+----==========---::                 
+#                       -==-:::::::::::::::-----------------------::::::::::::::::::::::----======-------------------------------------=+:=----=========----::                  
+#                       --::::::::....:::::-:----------------------::::::::::::::::::::::----=====-------------------------------------::==---=========---::                    
+#                      --:::::::::...:::::-------------------------::::::::::::::::::::::-:---===-----------------=-===-==---------------:---========---::                      
+#                      --::::::::::.-:::-----------------------------::::::::::::::::::::::------------------========*@%%%%@+-=----------::-========--::                        
+#                       -::::::::::-----------------------------------:::::::::::::::::::::--------------==========+%%%%%%%%%%==-------------=====---:                          
+#                       :=%@%%@%*:-::---------------------------------::::::::::::::::::::------------============#%%%%%%%%%%%%=====---------====--::                           
+#                    :=%#*+****+-=%##%+--------------------------------:::::::::::::::::::----------=============#%%%%%%@@%%%%%+=====------------::                             
+#                 ::**-------==+%######+------------------------------:::::::::::::::::::----------=============+%%%%%%+==%%%%%%======---------::                               
+#                :*+--------+%####%%####-----------------------------:::::::::::::::::::----------==============@%%%%%+===+%%%%%=======-------::                                
+#       -:::-:::+=---------*###%+:--####------------------------------::::::::::::::::::---------==============+%%%%%%====+%%%%%+======-------::                                
+#   -:*@%%%%%%%+-----------###=-----###+------------------------------:::::::::::::::::-------=-..=============%%%%%%+====+%%%%%+=======------:-                                
+# :=-------+%*------:::::--###----*####---------:-----::-----------::::::::::::::::::::------=-===::===========%%%%%%=====#%%%%%=======-------:                                 
+# ----------------::::::::-=##########---------::::::-::::--:-:--::::::::::::::::::::::-------++===-.==========@%%%%%=====@%%%%#========-----::                                 
+# -::----------:::::::::::.:=########-----::::::::::::::::::::::-::::::::::::::::::::::-----=:+++%*==.=========%%%%%%=====%%%%%+========-----::                                 
+# --::::::::::::::::::::::::::*%#%%+---:::::::::::::::::::::::::::::::::::::----:::::::-----=:++*@@@-:.========%%%%%%====@%%%%%=========::---:                                  
+#    :::...::.....:::::     ::::::-:::::::::::::::::::::::::::::::::::::::--------:::::-----=-+++@@@%::.=======*%%%%%*==%%%%%%+=======-:==--::                                  
+#          -:--::             ::::::::::::::::::::::- :::::::::::::::::::----------:::::-----==+++@@@::::+=+==++@%%%%%@%%%%%%*+++====:==+---:                                   
+#                               :::::::::::::::::::    :::::::::::::::::------------::::-----=-+++-:#::=--+++++++@%%%%%%%%%%++++===:==+++--:                                    
+#                                 -:::::::::::::        :::::::::::::::---------------::------=-++-:.:-==:=+++++++%%%%%%%@#+++++=:*==+++--::                                    
+#                                      :::-              :::::::::::::-----------------::------=--+=:+++=-:+++++++++*#%#+++++++==@@.+++--::                                     
+#                                                         ::::::::::::------------------::-----===-:+++++=:+++++++++++++++++++:%@#.=++--::                                      
+#                                                           :::::::::---------------------:-----======:::::=+++++++++++++++++:=-.:-+=--::                                       
+#                                                            :::::::-----------------------:-----==========+=++++++++++++++=:=+=:+=:--:                                         
+#                                                             ::::::----------------=====---:-----===========++++++++++++==-:-------::                                          
+#                                                              ::::----------------========--------==========++++++++++=========---::                                           
+#                                                              ::+%%%#---------------=========-:----=========+++++++++========----:                                             
+#                                                              :=%%%%%+--------------------------:----========++++++++=======---::                                              
+#                                                             ::%#%%%%%---------------------------------======+++::=++======--::                                                
+#                                                             :*%%#%%%%------------------------------:------====+:..======--::                                                  
+#                                                             :%%--%%%%=---------------------------------:::------=------:::                                                    
+#                                                             -#=-=%%%%=----------------------------------------:::::::::                                                       
+#                                                            :+%--+%%%%=-----------------------------------------:                                                              
+#                                                            :**--#%%%%=---------------------------:------------::                                                              
+#                                                            :*+--%##%%-------------::::::-----::::-------------::                                                              
+#                                                            :**--###%%-=----------:.:::::::::::-----------------:                                                              
+#                                                             -%-=###%+-----------:: :::::::::-------------------:                                                              
+#                                                             :%#%###%=---------:::       :::::----------------:-                                                               
+#                                                             :-#####=-----------:::       ::::-----------------:                                                               
+#                                                              :=##%=--------------:-      ::::----------------*:                                                               
+#                                                               :::-----------------:       ::::---------------+:                                                               
+#                                                                :::-----------------:-     ::::-----------------                                                               
+#                                                                 :::-----------------:      :::---------------:                                                                
+#                                                                  :::-----------------:     ::::--------------:                                                                
+#                                                                   ::::----------------:    ::::--------------:                                                                
+#                                                                    ::::----------------:    :::--------------:                                                                
+#                                                                      :::----------------:   ::::-------------:                                                                
+#                                                                       :::----------------:  ::::-------------:                                                                
+#                                                                        ::::---------------: ::::-------------:                                                                
+#                                                                         ::::---------------: :::-------------:                                                                
+#                                                                           :::---------------::::-------------:                                                                
+#                                                                            ::::--------------:::-------------:                                                                
+#                                                                             -::---------------::-------------:                                                                
+#                                                                              :::---------------:-------------:                                                                
+#                                                                               ::-------===-=-----------------:-                                                               
+#                                                                               ::------========---------------::                                                               
+#                                                                               -::----===========-=-----------::                                                               
+#                                                                                :::----====-====--=------------:                                                               
+#                                                                                 -:.....:::::::---:------=-----:                                                               
+#                                                                                        :::::::::::------==----:-                                                              
+#                                                                                                 ::-----===----::                                                              
+#                                                                                                 ::-----===-----:                                                              
+#                                                                                                 ::-----====----:                                                              
+#                                                                                                ::----======----::                                                             
+#                                                                                                ::-----=====-----:                                                             
+#                                                                                                :------=====-----::                                                            
+#                                                                                               -:-----=======-----:                                                            
+#                                                                                               ::-----===-===-----::                                                           
+#                                                                                                ::----===-===-----::                                                           
+#                                                                                                 ::---===-===-----::                                                           
+#                                                                                                  :::-------------::                                                           
+#                                                                                                     :::::::::::::                                                             
+
+
+
+description: 'A Link to the Past'
+name: HylianPast
+game: A Link to the Past
+A Link to the Past:
+  progression_balancing: random
+  accessibility: random
+  goals:
+    ganon: 50
+    crystals: 50
+    bosses: 50
+    pedestal: 50
+    ganon_pedestal: 50
+    triforce_hunt: 50
+    local_triforce_hunt: 50
+    ganon_triforce_hunt: 50
+    local_ganon_triforce_hunt: 50
+    ice_rod_hunt: 50
+    #random: 50
+  crystals_needed_for_gt: random
+  crystals_needed_for_ganon: random
+  open_pyramid: random
+  bigkey_shuffle: any_world
+  smallkey_shuffle: any_world
+  key_drop_shuffle: 'true'
+  compass_shuffle: any_world
+  map_shuffle: any_world
+  progressive: on #grouped_random
+  swordless: 'false'
+  retro_bow: 'false'
+  retro_caves: 'false'
+  hints: on #full
+  scams: off
+  restrict_dungeon_item_on_boss: 'false'
+  boss_shuffle: full #none basic chaos singularity
+  pot_shuffle: 'true'
+  enemy_shuffle: 'false'
+  killable_thieves: 'true'
+  bush_shuffle: 'true' #'false'
+  shop_item_slots: random
+  shop_price_modifier: random-low
+  tile_shuffle: 'true'
+  ow_palettes: default #good blackout puke classic grayscale negative dizzy sick
+  uw_palettes: default #good blackout puke classic grayscale negative dizzy sick
+  hud_palettes: default #good blackout puke classic grayscale negative dizzy sick
+  sword_palettes: default #good blackout puke classic grayscale negative dizzy sick
+  shield_palettes: default #good blackout puke classic grayscale negative dizzy sick
+  heartbeep: random #normal double half quarter off 
+  heartcolor:
+    red: 0
+    blue: 50
+    green: 50
+    yellow: 50
+    random: 0
+  quickswap: 'true'
+  menuspeed: random
+  music: 'true'
+  reduceflashing: 'true'
+  triforcehud: normal #hide_goal hide_required
+  glitch_boots: 'false'
+  beemizer_total_chance: random
+  beemizer_trap_chance: random
+  death_link: 'false' #'true'
+  allow_collect: 'true'
+
+---
+
+description: 'Pokemon Red and Blue'
+name: HylianRB
+game: Pokemon Red and Blue
+Pokemon Red and Blue:
+  progression_balancing: random
+  accessibility: random
+  game_version: random
+  trainer_name:
+    HYLUM24: 50
+    RED: 50
+    ASH: 50
+    GOLD: 50
+  rival_name:
+    ARCH: 50
+    RANDOM: 50
+    DOUSCHE: 50
+    BLUE: 50
+    GARY: 50
+  elite_four_badges_condition: random
+  elite_four_key_items_condition: random
+  elite_four_pokedex_condition: random
+  victory_road_condition: random
+  route_22_gate_condition: random
+  viridian_gym_condition: random
+  cerulean_cave_badges_condition: random
+  cerulean_cave_key_items_condition: random
+  route_3_condition: random
+  robbed_house_officer: random
+  second_fossil_check_condition: random
+  fossil_check_item_types: any
+  exp_all: remove
+  old_man: random
+  badgesanity: 'true'
+  badges_needed_for_hm_moves: extra_plus
+  key_items_only: 'false'
+  tea: 'true'
+  extra_key_items: 'true'
+  split_card_key: random
+  all_elevators_locked: random
+  extra_strength_boulders: 'true'
+  require_item_finder: 'false'
+  randomize_hidden_items: on
+  prizesanity: 'true'
+  trainersanity: 'true'
+  dexsanity: random
+  randomize_pokedex: randomize
+  require_pokedex: 'true'
+  all_pokemon_seen: 'true'
+  oaks_aide_rt_2: random
+  oaks_aide_rt_11: random
+  oaks_aide_rt_15: random
+  stonesanity: 'true'
+  door_shuffle: insanity
+  warp_tile_shuffle: 'true'
+  randomize_rock_tunnel: random
+  dark_rock_tunnel_logic: 'true'
+  free_fly_location: 'true'
+  town_map_fly_location: 'true'
+  blind_trainers: random
+  minimum_steps_between_encounters: 3
+  level_scaling:
+    by_spheres: 50
+    by_spheres_and_distance: 50
+  exp_modifier: random-range-16-255
+  randomize_wild_pokemon: completely_random
+  area_1_to_1_mapping: random
+  randomize_starter_pokemon: completely_random
+  randomize_static_pokemon: completely_random
+  randomize_legendary_pokemon: any
+  catch_em_all: random
+  randomize_pokemon_stats: vanilla
+  randomize_pokemon_catch_rates: 'false'
+  minimum_catch_rate: 3
+  randomize_trainer_parties: completely_random
+  trainer_legendaries: 'true'
+  move_balancing: random
+  fix_combat_bugs: random
+  randomize_pokemon_movesets:
+    vanilla: 50
+    prefer_types: 50
+  confine_transform_to_ditto: 'true'
+  start_with_four_moves: 'true'
+  same_type_attack_bonus: 'true'
+  randomize_tm_moves: random
+  tm_same_type_compatibility: random
+  tm_normal_type_compatibility: random
+  tm_other_type_compatibility: random
+  hm_same_type_compatibility: random
+  hm_normal_type_compatibility: random
+  hm_other_type_compatibility: random
+  inherit_tm_hm_compatibility: 'true'
+  randomize_move_types: 'false'
+  randomize_pokemon_types: vanilla
+  secondary_type_chance: '-1'
+  randomize_type_chart: vanilla
+  normal_matchups: 143
+  super_effective_matchups: 38
+  not_very_effective_matchups: 38
+  immunity_matchups: 6
+  safari_zone_normal_battles: random
+  normalize_encounter_chances: 'true'
+  reusable_tms: 'true'
+  better_shops: add_master_ball
+  master_ball_price: 2000
+  starting_money: random
+  lose_money_on_blackout: 'false'
+  poke_doll_skip: in_logic #patched
+  bicycle_gate_skips: patched
+  trap_percentage: random-range-0-25
+  poison_trap_weight: random
+  fire_trap_weight: random
+  paralyze_trap_weight: random
+  sleep_trap_weight: random
+  ice_trap_weight: random
+  randomize_pokemon_palettes:
+    vanilla: 0
+    primary_type: 50
+    follow_evolutions: 50
+    completely_random: 50
+    random: 0
+  death_link: 'false'
+
+---
+
+description: Oracle of Seasons
+name: HylodrUmbreon
+game: The Legend of Zelda - Oracle of Seasons
+The Legend of Zelda - Oracle of Seasons:
+  progression_balancing: random
+  accessibility: random
+  goal: beat_onox
+  logic_difficulty: casual #medium hard
+  required_essences: random
+  default_seasons: randomized
+  horon_village_season: normalized #chaotic
+  animal_companion: random #ricky dimitri moosh
+  default_seed: random #ember scent pegasus mystery gale
+  shuffle_dungeons: shuffle
+  shuffle_portals: shuffle
+  shuffle_old_men: shuffled_values
+  treehouse_old_man_requirement: random
+  golden_beasts_requirement: random
+  lost_woods_item_sequence: randomized
+  ring_quality: any
+  shop_prices_factor: random-range-10-200 #Min: 10 Max: 500
+  advance_shop: true
+  fools_ore: vanilla
+  warp_to_start: true
+  quick_flute: true
+  heart_beep_interval: random #Default Half Quarter Disabled
+  character_sprite: subrosian #link goron piratian
+  character_palette: random
+  death_link: false #true random
+
+---
+
+description: 'The Witness'
+name: HylianWitness
+game: The Witness
+The Witness:
+  progression_balancing: random
+  accessibility: random
+  puzzle_randomization: sigma_normal
+  shuffle_symbols: 'true'
+  shuffle_doors: mixed
+  door_groupings: off
+  shuffle_boat: 'true'
+  shuffle_lasers: 'true'
+  disable_non_randomized_puzzles: 'false'
+  shuffle_discarded_panels: 'true'
+  shuffle_vault_boxes: 'true'
+  shuffle_EPs: individual
+  EP_difficulty: normal
+  shuffle_postgame: 'true'
+  victory_condition: random
+  mountain_lasers: random
+  challenge_lasers: random
+  early_caves: add_to_pool
+  elevators_come_to_you: 'false'
+  trap_percentage: '10'
+  puzzle_skip_amount: '30'
+  hint_amount: random
+  death_link: 'false'
+
+---
+
+description: 'Bumper Stickers'
+name: HylianBump
+game: Bumper Stickers
+Bumper Stickers:
+  progression_balancing: random
+  accessibility: random
+  task_advances: random-range-1-5
+  turners: random-range-3-5
+  paint_cans: random-range-3-5
+  trap_count: random
+  rainbow_trap_weight: random
+  spinner_trap_weight: random
+  killer_trap_weight: random
+
+---
+
+description: 'Manual for Super Smash Bros. Ultimate World of Light mode'
+game: Manual_WorldOfLight_Entei
+name: HyLightan
+Manual_WorldOfLight_Entei:
+  progression_balancing: random
+  accessibility: random
+  #start_location_hints: ['Rescue Marth', 'Rescue Sheik', 'Rescue Villager']
+  piranha_plant: true
+  fighter_pass_1: true
+  fighter_pass_2: true
+  full_game: true                          #Exactly one of these must be true.
+  light_realm_only: false

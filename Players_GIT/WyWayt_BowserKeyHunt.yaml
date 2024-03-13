@@ -1,0 +1,418 @@
+name: WyWayt_SM64
+
+# Used to describe your yaml. Useful if you have multiple files.
+description: Default Super Mario 64 Template
+
+game: Super Mario 64
+requires:
+  version: 0.4.3 # Version of Archipelago required for this yaml to work as expected.
+
+Super Mario 64:
+  progression_balancing:
+    # A system that can move progression earlier, to try and prevent the player from getting stuck and bored early.
+    # A lower setting means more getting stuck. A higher setting means less getting stuck.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 99
+    random: 0
+    random-low: 0
+    random-high: 0
+    disabled: 0 # equivalent to 0
+    normal: 50 # equivalent to 50
+    extreme: 0 # equivalent to 99
+
+  accessibility:
+    # Set rules for reachability of your items/locations.
+    # Locations: ensure everything can be reached and acquired.
+    # Items: ensure all logically relevant items can be acquired.
+    # Minimal: ensure what is needed to reach your goal can be acquired.
+    locations: 0
+    items: 50
+    minimal: 0
+
+  local_items:
+    # Forces these items to be in their native world.
+    []
+
+  non_local_items:
+    # Forces these items to be outside their native world.
+    []
+
+  start_inventory:
+    # Start with these items.
+    {}
+
+  start_hints:
+    # Start with these item's locations prefilled into the !hint command.
+    []
+
+  start_location_hints:
+    # Start with these locations and their item prefilled into the !hint command
+    []
+
+  exclude_locations:
+    # Prevent these locations from having an important item
+    []
+
+  priority_locations:
+    # Prevent these locations from having an unimportant item
+    []
+
+  item_links:
+    # Share part of your item pool with other players.
+    []
+
+  AreaRandomizer:
+    # Randomize Entrances
+    off: 50
+    courses_only: 0
+    courses_and_secrets_separate: 50
+    courses_and_secrets: 0
+
+  BuddyChecks:
+    # Bob-omb Buddies are checks, Cannon Unlocks are items
+    false: 0
+    true: 50
+
+  ExclamationBoxes:
+    # Include 1Up Exclamation Boxes during randomization.
+    # Adds 29 locations to the pool.
+    off: 0
+    1ups_only: 50
+
+  ProgressiveKeys:
+    # Keys will first grant you access to the Basement, then to the Second Floor
+    false: 0
+    true: 50
+
+  EnableCoinStars:
+    # Disable to Ignore 100 Coin Stars. You can still collect them, but they don't do anything.
+    # Removes 15 locations from the pool.
+    false: 50
+    true: 0
+
+  StrictCapRequirements:
+    # If disabled, Stars that expect special caps may have to be acquired without the caps
+    false: 0
+    true: 50
+
+  StrictCannonRequirements:
+    # If disabled, Stars that expect cannons may have to be acquired without them.
+    # Has no effect if Buddy Checks and Move Randomizer are disabled
+    false: 0
+    true: 50
+
+  StrictMoveRequirements:
+    # If disabled, Stars that expect certain moves may have to be acquired without them. Only makes a difference
+    # if Move Randomization is enabled
+    false: 0
+    true: 50
+
+  AmountOfStars:
+    # How many stars exist.
+    # If there aren't enough locations to hold the given total, the total will be reduced.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 35
+    # Maximum value is 120
+    120: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  FirstBowserStarDoorCost:
+    # What percent of the total stars are required at the Star Door to Bowser in the Dark World
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 40
+    7: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  BasementStarDoorCost:
+    # What percent of the total stars are required at the Star Door in the Basement
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 50
+    25: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  SecondFloorStarDoorCost:
+    # What percent of the total stars are required to access the third floor
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 70
+    42: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  MIPS1Cost:
+    # What percent of the total stars are required to spawn MIPS the first time
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 35
+    12: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  MIPS2Cost:
+    # What percent of the total stars are required to spawn MIPS the second time.
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 70
+    42: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  StarsToFinish:
+    # What percent of the total stars are required at the infinite stairs
+    #
+    # You can define additional values between the minimum and maximum values.
+    # Minimum value is 0
+    # Maximum value is 90
+    58: 50
+    random: 0
+    random-low: 0
+    random-high: 0
+
+  death_link:
+    # When you die, everyone dies. Of course the reverse is true too.
+    false: 50
+    true: 0
+
+  CompletionType:
+    # Set goal for game completion
+    last_bowser_stage: 50
+    all_bowser_stages: 0
+
+  MoveRandomizerTripleJump:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerLongJump:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerBackflip:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerSideFlip:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerWallKick:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerDive:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerGroundPound:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerKick:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerClimb:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+  MoveRandomizerLedgeGrab:
+    # Mario is unable to perform this action until a corresponding item is picked up.
+    #     This option will only work if your SM64 client is built with the ap_moverando branch;
+    #     otherwise, Mario will start with all of his moves.
+    false: 0
+    true: 50
+
+---
+
+A Link to the Past:
+  progression_balancing: 50
+  accessibility: items
+  crystals_needed_for_gt: 7
+  crystals_needed_for_ganon: 7
+  open_pyramid: goal
+  bigkey_shuffle: any_world
+  smallkey_shuffle: any_world
+  key_drop_shuffle: 'false'
+  compass_shuffle: any_world
+  map_shuffle: any_world
+  progressive: on
+  swordless: 'false'
+  retro_bow: 'false'
+  retro_caves: 'false'
+  hints: on
+  scams: off
+  restrict_dungeon_item_on_boss: 'false'
+  boss_shuffle: none
+  pot_shuffle: 'false'
+  enemy_shuffle: 'false'
+  killable_thieves: 'false'
+  bush_shuffle: 'false'
+  shop_item_slots: 0
+  shop_price_modifier: 100
+  tile_shuffle: 'false'
+  ow_palettes: default
+  uw_palettes: default
+  hud_palettes: default
+  sword_palettes: default
+  shield_palettes: default
+  heartbeep: quarter
+  heartcolor: green
+  quickswap: 'true'
+  menuspeed: normal
+  music: 'true'
+  reduceflashing: 'true'
+  triforcehud: normal
+  glitch_boots: 'true'
+  beemizer_total_chance: 0
+  beemizer_trap_chance: 60
+  death_link: 'false'
+  allow_collect: 'false'
+description: 'Generated by https://archipelago.gg with the default preset.'
+game: A Link to the Past
+name: WyWayt_ALTTP
+
+
+---
+
+DLCQuest:
+  progression_balancing: 50
+  accessibility: items
+  double_jump_glitch: none
+  coinsanity: coin
+  coinbundlequantity: 30
+  time_is_money: required
+  ending_choice: 'true'
+  campaign: both
+  item_shuffle: shuffled
+  death_link: 'false'
+description: 'Generated by https://archipelago.gg.'
+game: DLCQuest
+name: WyWayt_DLCQuest
+
+
+---
+
+Muse Dash:
+  progression_balancing: 50
+  accessibility: items
+  allow_just_as_planned_dlc_songs: 'false'
+  dlc_packs: []
+  streamer_mode_enabled: 'false'
+  starting_song_count: 5
+  additional_song_count: 40
+  additional_item_percentage: 80
+  song_difficulty_mode: any
+  song_difficulty_min: 4
+  song_difficulty_max: 8
+  grade_needed: a
+  music_sheet_count_percentage: 20
+  music_sheet_win_count_percentage: 80
+  available_trap_types: all
+  trap_count_percentage: 15
+  death_link: 'false'
+  include_songs: []
+  exclude_songs: []
+description: 'Generated by https://archipelago.gg.'
+game: Muse Dash
+name: WyWayt_MuseDash
+
+
+---
+
+Pokemon Emerald:
+  progression_balancing: 50
+  accessibility: items
+  goal: steven
+  badges: completely_random
+  hms: completely_random
+  key_items: 'true'
+  bikes: 'true'
+  rods: 'true'
+  overworld_items: 'true'
+  hidden_items: 'true'
+  npc_gifts: 'true'
+  item_pool_type: shuffled
+  require_itemfinder: 'true'
+  require_flash: 'true'
+  elite_four_requirement: badges
+  elite_four_count: 8
+  norman_requirement: badges
+  norman_count: 4
+  wild_pokemon: completely_random
+  allow_wild_legendaries: 'true'
+  starters: completely_random
+  allow_starter_legendaries: 'true'
+  trainer_parties: completely_random
+  allow_trainer_legendaries: 'true'
+  static_encounters: completely_random
+  types: vanilla
+  abilities: completely_random
+  ability_blacklist: ["Wonder Guard", "Arena Trap"]
+  level_up_moves: randomized
+  move_match_type_bias: 0
+  move_normal_type_bias: 0
+  tm_compatibility: fully_compatible
+  hm_compatibility: fully_compatible
+  tm_moves: 'true'
+  reusable_tms: 'true'
+  min_catch_rate: 3
+  guaranteed_catch: 'true'
+  exp_modifier: 200
+  blind_trainers: 'true'
+  double_battle_chance: 0
+  better_shops: 'true'
+  enable_ferry: 'true'
+  remove_roadblocks: []
+  extra_boulders: 'true'
+  free_fly_location: 'true'
+  fly_without_badge: 'true'
+  turbo_a: 'true'
+  receive_item_messages: all
+description: 'Generated by https://archipelago.gg.'
+game: Pokemon Emerald
+name: WyWayt_Emerald

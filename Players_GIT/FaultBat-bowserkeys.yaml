@@ -1,0 +1,49 @@
+Factorio:
+  progression_balancing: 0
+  accessibility: items
+  max_science_pack: space_science_pack
+  goal: satellite
+  tech_tree_layout: single
+  min_tech_cost: random
+  max_tech_cost: random
+  tech_cost_distribution: random
+  tech_cost_mix: random
+  ramping_tech_costs: 'true'
+  silo: randomize_recipe
+  satellite: randomize_recipe
+  free_samples: stack
+  tech_tree_information: none
+  recipe_time: chaos
+  recipe_ingredients: science_pack
+  recipe_ingredients_offset: random
+  imported_blueprints: 'true'
+  progressive: on
+  teleport_traps: random
+  grenade_traps: random
+  cluster_grenade_traps: random
+  artillery_traps: random
+  atomic_rocket_traps: 1
+  attack_traps: random
+  evolution_traps: 0
+  death_link: 'true'
+  energy_link: 'true'
+game: Factorio
+name: FaultBat-Fctr
+
+---
+
+The Messenger:
+  progression_balancing: 0
+  accessibility: items
+  logic_level: normal
+  shuffle_seals: 'true'
+  shuffle_shards: 'true'
+  goal: power_seal_hunt
+  music_box: 'true'
+  notes_needed: 6
+  total_seals: 45
+  percent_seals_required: 100
+  shop_price: random
+  death_link: 'true'
+game: The Messenger
+name: FaultBat-Msngr

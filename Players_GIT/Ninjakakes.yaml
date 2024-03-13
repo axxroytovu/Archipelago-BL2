@@ -36,7 +36,7 @@ SMZ3:
   morph_location:
     randomized: 1
     original: 1
-  goal: alldungeonsdefeatmotherbrain
+  goal: defeatboth
   key_shuffle: none
   open_tower: 7
   ganon_vulnerable: 7
