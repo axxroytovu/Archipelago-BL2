@@ -6,25 +6,25 @@
 		"progression_skip_balancing": true
 	},
 	{
-		"count": "500",
+		"count": "1000",
 		"name": "Bowser Key",
 		"category": [],
 		"progression": true
 	},
 	{
-		"count": "10",
+		"count": "20",
 		"name": "Mimic Key",
 		"category": [],
 		"trap": true
 	},
 	{
-		"count": "200",
+		"count": "400",
 		"name": "Bowser Key Hint",
 		"category": [],
 		"useful": true
 	},
 	{
-		"count": "50",
+		"count": "40",
 		"name": "Super Star Hint",
 		"category": [],
 		"useful": true
