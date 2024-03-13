@@ -84,10 +84,6 @@ Manual_MK8D_RampantEpsilon:
     include_base_game: true
     include_DLC: true
 
-    # Change if you want the game to be completable by other games #
-    ## NOTE: Removing local_items could make your game beatable without ever playing it! ##
-    local_items: Gold Trophy
-
 game: Manual_MK8D_RampantEpsilon
 name: AxxroyKart
 
@@ -96,10 +92,7 @@ name: AxxroyKart
 Manual_MHRiseHub_Axxroy:
     progression_balancing: 50
     accessibility: items
-    victory_condition: 
-      master_rank: 0
-      high_rank: 50
-      low_rank: 0
+    victory_condition: master_rank
     shuffle_postgame: true
 
 game: Manual_MHRiseHub_Axxroy
@@ -126,8 +119,7 @@ requires:
   version: 0.4.4 # Version of Archipelago required for this yaml to work as expected.
 
 Manual_Pikmin4_ProfBytes:
-  progression_balancing:
-    disabled: 50 # equivalent to 0
+  progression_balancing: 50
 
   accessibility:
     # Set rules for reachability of your items/locations.
@@ -137,38 +129,6 @@ Manual_Pikmin4_ProfBytes:
     locations: 0
     items: 50
     minimal: 0
-
-  local_items:
-    # Forces these items to be in their native world.
-    []
-
-  non_local_items:
-    # Forces these items to be outside their native world.
-    []
-
-  start_inventory:
-    # Start with these items.
-    {}
-
-  start_hints:
-    # Start with these item's locations prefilled into the !hint command.
-    []
-
-  start_location_hints:
-    # Start with these locations and their item prefilled into the !hint command
-    []
-
-  exclude_locations:
-    # Prevent these locations from having an important item
-    []
-
-  priority_locations:
-    # Prevent these locations from having an unimportant item
-    []
-
-  item_links:
-    # Share part of your item pool with other players.
-    []
 
 ---
 
