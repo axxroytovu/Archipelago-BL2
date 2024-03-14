@@ -132,6 +132,10 @@ ffr_options:
 ffxiitm_options:
   # Automatically install/update the lua script when you launch the client.  If false, you will need to manually install the script from data/lua.
   install_script: true
+gauntlet_legends_options:
+  # File name of the GL US rom
+  rom_file: "Gauntlet Legends (U) [!].z64"
+  rom_start: false
 ladx_options:
   # File name of the Link's Awakening DX rom
   rom_file: "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced).gbc"
@@ -203,6 +207,13 @@ wargroove_options:
   # Locate the Wargroove root directory on your system.
   # This is used by the Wargroove client, so it knows where to send communication files to
   root_directory: "C:/Program Files (x86)/Steam/steamapps/common/Wargroove"
+wl4_options:
+  # File name of the Wario Land 4 ROM
+  rom_file: "Wario Land 4.gba"
+  rom_start: true
+wl_options:
+  # File name of the WL World rom
+  rom_file: "Wario Land - Super Mario Land 3 (World).gb"
 zillion_options:
   # File name of the Zillion US rom
   rom_file: "Zillion (UE) [!].sms"
