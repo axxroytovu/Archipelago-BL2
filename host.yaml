@@ -130,10 +130,8 @@ factorio_options:
 ffr_options:
   display_msgs: true
 ffxiitm_options:
-  # Automatically install/update the lua script when you launch the client.  If false, you will need to manually install the script from data/lua.
   install_script: true
 gauntlet_legends_options:
-  # File name of the GL US rom
   rom_file: "Gauntlet Legends (U) [!].z64"
   rom_start: false
 ladx_options:
@@ -155,7 +153,6 @@ lufia2ac_options:
   # File name of the US rom
   rom_file: "Lufia II - Rise of the Sinistrals (USA).sfc"
 mariomissing_options:
-  # File name of the Mario is Missing US ROM
   rom_file: "Mario Is Missing! (USA).sfc"
 minecraft_options:
   forge_directory: "Minecraft Forge server"
@@ -164,7 +161,6 @@ minecraft_options:
   # any games played on the "beta" channel have a high likelihood of no longer working on the "release" channel.
   release_channel: "release"
 mk64_options:
-  # File name of the MK64 ROM
   rom_file: "Mario Kart 64 (U) [!].z64"
 mmbn3_options:
   # File name of the MMBN3 Blue US rom
@@ -189,7 +185,6 @@ sm_options:
   # File name of the v1.0 J rom
   rom_file: "Super Metroid (JU).sfc"
 smw_options:
-  # File name of the SMW US rom
   rom_file: "Super Mario World (USA).sfc"
 soe_options:
   # File name of the SoE US ROM
@@ -203,16 +198,18 @@ tloz_options:
   rom_start: true
   # Display message inside of Bizhawk
   display_msgs: true
+universal_tracker:
+  player_files_path: null
+  include_region_name: false
+  include_location_name: true
 wargroove_options:
   # Locate the Wargroove root directory on your system.
   # This is used by the Wargroove client, so it knows where to send communication files to
   root_directory: "C:/Program Files (x86)/Steam/steamapps/common/Wargroove"
 wl4_options:
-  # File name of the Wario Land 4 ROM
   rom_file: "Wario Land 4.gba"
   rom_start: true
 wl_options:
-  # File name of the WL World rom
   rom_file: "Wario Land - Super Mario Land 3 (World).gb"
 zillion_options:
   # File name of the Zillion US rom
