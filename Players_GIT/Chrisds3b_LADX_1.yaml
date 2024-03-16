@@ -183,8 +183,8 @@ Links Awakening DX:
     # [Simple] The entrances will be shuffled amongst themselves
     # [Mixed] The entrances will be shuffled among other entrances
     vanilla: 0
-    simple: 50
-    mixed: 0
+    simple: 0
+    mixed: 50
 
   goal:
     # The Goal of the game

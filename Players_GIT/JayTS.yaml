@@ -27,8 +27,7 @@ Timespinner:
     []
 
   start_inventory:
-    # Start with these items.
-    {}
+    Succubus Hairpin: 1
 
   start_hints:
     # Start with these item's locations prefilled into the !hint command.

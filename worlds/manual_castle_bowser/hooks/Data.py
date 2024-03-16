@@ -15,13 +15,13 @@ def after_load_location_file(location_table: list) -> list:
     for i in range(2000):
         r = int(i/2) + 1
         location_table.append({
-            "name": f"Bowser Chest {i+1}",
+            "name": f"Bowser Chest {i+1:0>4}",
             "category": ["Bowser Chest"],
             "requires": f"|Bowser Key:{r}|"
         })
     for i in range(100):
         location_table.append({
-            "name": f"Mimic Chest {i+1}",
+            "name": f"Mimic Chest {i+1:0>4}",
             "category": ["Mimic Chest"],
             "requires": []
         })
