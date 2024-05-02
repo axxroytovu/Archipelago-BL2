@@ -1,0 +1,24 @@
+﻿name: AxxroyRise
+description: MH Rise for Deltas Lab Async
+game: Manual_MHRiseHub_Axxroy
+requires:
+  version: 0.4.5 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_MHRiseHub_Axxroy:
+  progression_balancing: disabled
+  accessibility: items
+  victory_condition: high_rank
+  shuffle_postgame: false
+  quest_density: normal
+
+---
+
+name: AxxroyShapez
+description: Shapez for Deltas lab async
+game: Manual_Shapez_suncat
+requires:
+  version: 0.4.5 # Version of Archipelago required for this yaml to work as expected.
+
+Manual_Shapez_suncat:
+  progression_balancing: disabled
+  accessibility: items
