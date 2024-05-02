@@ -1,0 +1,42 @@
+Manual_MagicArena_Axxroy:
+  accessibility: items
+  progression_balancing: 0
+description: Built with Axxroy's Fighting Game Builder
+game: Manual_MagicArena_Axxroy
+name: AxxroyMagic
+
+---
+
+Manual_Ironsworn_Axxroy:
+    progression_balancing: 0
+    accessibility: items
+    delve: true
+    games_override:
+    # Valid games: 
+    - DOOM 1993
+    - DOOM II
+    - Manual_Ironsworn_Axxroy
+    - Manual_MHRiseHub_Axxroy
+    - Minecraft
+    - Overcooked! 2
+    - Pokemon Red and Blue
+    - Pokemon Emerald
+    - A Short Hike
+    - The Witness
+    - Timespinner
+    - Tunic
+    
+    # Setting games_override to ["Everything"] will force all game content
+    # Setting games_override to [] will pull the valid games from the multiworld
+
+game: Manual_Ironsworn_Axxroy
+name: AxxroyIron
+
+---
+
+Manual_Tasks_Axxroy:
+  accessibility: items
+  progression_balancing: 0
+description: Built with Axxroy's Lucubration Builder
+game: Manual_Tasks_Axxroy
+name: AxxroyTasks
