@@ -13,7 +13,7 @@ server_options:
   disable_save: false
   loglevel: "info"
   # Allows for clients to log on and manage the server.  If this is null, no remote administration is possible.
-  server_password: friendship
+  server_password: "friendship"
   # Disallow !getitem
   disable_item_cheat: false
   # Client hint system
@@ -191,6 +191,11 @@ tloz_options:
   rom_start: true
   # Display message inside of Bizhawk
   display_msgs: true
+universal_tracker:
+  player_files_path: null
+  include_region_name: false
+  include_location_name: true
+  hide_excluded_locations: false
 wargroove_options:
   # Locate the Wargroove root directory on your system.
   # This is used by the Wargroove client, so it knows where to send communication files to
