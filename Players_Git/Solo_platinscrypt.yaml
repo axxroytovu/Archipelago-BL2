@@ -1,0 +1,49 @@
+Inscryption:
+  progression_balancing: 0
+  accessibility: items
+  
+  # false: Only die when you die (vanilla).
+  # true: When other players using deathlink die, you die as well.
+  deathlink: 'false'
+  
+  # 0: Send a death when sacrificed by Leshy. Receiving a death will extinguish all candles.
+  # 1: Send a death when a candle is extinguished. Receiving a death will extinguish a candle.
+  act1_deathlink_behaviour: 0
+  
+  # 0: Complete each act and the epilogue in order. You can return to previously completed acts.
+  # 1: Complete each act in any order, then the epilogue. All acts are available from the start.
+  # 2: Complete Act 1 by finding the New Game button. Great for a smaller scale randomizer.
+  goal: 0
+
+  # false: No code randomization (vanilla)
+  # true: randomizes certain codes and passwords so that you can't unlock everything by memory.  
+  randomize_codes: 'false'
+  
+  # 0: No deck randomization (vanilla).
+  # 1: Randomize cards within their type on each encounter (Common/Rare, only works on act 1 for now).
+  # 2: Randomize cards completely on each encounter.
+  randomize_deck: 0
+  
+  # 0: No ability randomization (vanilla).
+  # 1: Randomize modded abilities only (like those gained from sacrifices).
+  randomize_abilities: 0
+  
+  # 0: Make a death card on every act 1 death (vanilla).
+  # 1: Gain the option to skip death cards on every act 1 death.
+  # 2: Gain the option to skip death cards only when dying from death link in act 1.
+  optional_death_card: 1
+  
+  # false: Play through the tutorial (vanilla).
+  # true: Skip the first few tutorial runs. Bones are available from the start.
+  skip_tutorial: 'true'
+  
+  # 0: Randomizes all nine pieces as their own item.
+  # 1: Randomizes pieces in groups of three.
+  # 2: Group all nine pieces as a single item.
+  epitaph_pieces_randomization: 1
+  
+description: 'Template file from https://github.com/DrBibop/Archipelago_Inscryption/releases'
+game: Inscryption
+
+# Change this to your own username
+name: platinscrypt

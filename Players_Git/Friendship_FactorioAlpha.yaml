@@ -1,0 +1,50 @@
+description: 'Second proposed yaml for group Alpha'
+Factorio:
+  progression_balancing: 50
+  accessibility: items
+  max_science_pack: space_science_pack
+  goal: satellite
+  tech_tree_layout: random
+  min_tech_cost: 11
+  max_tech_cost: 1111
+  tech_cost_distribution: even
+  tech_cost_mix: 70
+  ramping_tech_costs: 'true'
+  silo: randomize_recipe
+  satellite: randomize_recipe
+  free_samples: half_stack
+  tech_tree_information: advancement
+  recipe_time: normal
+  recipe_ingredients: science_pack
+  recipe_ingredients_offset: 2
+  imported_blueprints: 'true'
+  progressive: on
+  teleport_traps: 0
+  grenade_traps: 0
+  cluster_grenade_traps: 0
+  artillery_traps: 0
+  atomic_rocket_traps: 0
+  attack_traps: 0
+  evolution_traps: 0
+  evolution_trap_increase: 10
+  death_link: 'false'
+  energy_link: 'true'
+  world_gen:
+    autoplace_controls:
+      enemy-base:
+        frequency: 0
+        richness: 1
+        size: 0
+    cliff_settings:
+      cliff_elevation_0: 10
+      cliff_elevation_interval: 40
+      name: cliff
+      richness: 0
+    enemy_evolution:
+      enabled: false
+    enemy_expansion:
+      enabled: false
+    pollution:
+      enabled: false
+game: Factorio
+name: FactorioFriend

@@ -1,0 +1,17 @@
+# This file has to be in the Players folder to take effect, keeping the "meta.yaml" name
+# A meta file rolls its own set of options first
+# The result will then overwrite each player's option in that particular field
+# For example, if a meta.yaml fast_ganon result is rolled, every player will have that fast_ganon goal
+# There is the special case of null, which ignores that part of the meta.yaml,
+# allowing for a chance for that meta to not take effect
+meta_description: Enable all gifting and link features
+Satisfactory:
+  energy_link: true
+  energy_link_logic_placement: unlocked_from_start
+Stardew Valley:
+  gifting: true
+Minecraft:
+  send_defeated_mobs: true
+Factorio:
+  energy_link: true
+  

@@ -13,7 +13,7 @@ server_options:
   disable_save: false
   loglevel: "info"
   # Allows for clients to log on and manage the server.  If this is null, no remote administration is possible.
-  server_password: null
+  server_password: friendship
   # Disallow !getitem
   disable_item_cheat: false
   # Client hint system
@@ -38,7 +38,7 @@ server_options:
   # "auto" -> automatic collect on goal completion
   # "auto-enabled" -> automatic collect on goal completion and manual collect is also enabled
   # "goal" -> collect is allowed after goal completion
-  collect_mode: "auto"
+  collect_mode: "disabled"
   # Remaining modes
   # !remaining handling, that tells a client which items remain in their pool
   # "enabled" -> Client can always ask for remaining items
@@ -72,7 +72,7 @@ generator:
   # 1 -> Spoiler without playthrough or paths to playthrough required items
   # 2 -> Spoiler with playthrough (viable solution to goals)
   # 3 -> Spoiler with playthrough and traversal paths towards items
-  spoiler: 3
+  spoiler: 1
   # Create encrypted race roms and flag games as race mode
   race: 0
   # List of options that can be plando'd. Can be combined, for example "bosses, items"

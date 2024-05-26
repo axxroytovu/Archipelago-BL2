@@ -1,0 +1,45 @@
+name: JamaicanPkfriend
+game: Pokemon Red and Blue
+Pokemon Red and Blue:
+  game_version: blue
+  trainer_name: <PK>friend
+  rival_name: <PK>enemy
+  elite_four_badges_condition: 8
+  old_man: vanilla
+  badgesanity: true
+  badges_needed_for_hm_moves: extra_plus
+  tea: true
+  extra_key_items: true
+  split_card_key: on
+  extra_strength_boulders: true
+  randomize_hidden_items: on
+  prizesanity: true
+  trainersanity: true
+  randomize_pokedex: randomize
+  dexsanity: full
+  stonesanity: true
+  door_shuffle: decoupled
+  warp_tile_shuffle: mixed
+  all_elevators_locked: true
+  town_map_fly_location: true
+  minimum_steps_between_encounters: 20
+  level_scaling: by_spheres_and_distance
+  exp_modifier: 32
+  randomize_wild_pokemon: match_types
+  randomize_starter_pokemon: match_base_stats
+  randomize_static_pokemon: completely_random
+  randomize_legendary_pokemon: any
+  catch_em_all: all_pokemon
+  randomize_pokemon_stats: shuffle
+  minimum_catch_rate: 100
+  randomize_trainer_parties: match_types
+  trainer_legendaries: true
+  move_balancing: true
+  randomize_pokemon_movesets: prefer_types
+  hm_same_type_compatibility: 100
+  hm_normal_type_compatibility: 100
+  hm_other_type_compatibility: 0
+  safari_zone_normal_battles: true
+  normalize_encounter_chances: true
+  better_shops: add_master_ball
+  lose_money_on_blackout: false

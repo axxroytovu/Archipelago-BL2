@@ -1,0 +1,28 @@
+Manual_PeggleNights_Freezinater:
+    progression_balancing: 50
+    accessibility: items
+    
+    # Toggles clearing 100% pegs in a level as checks. Turning this on will add 20 more Certificates of Mastery,
+    # adding an extra 16 to the 80% goal.
+    full_clears_are_checks: false
+    
+    # Toggles achieving the Ace Score in a level as checks. Turning this on will add 20 more Certificates of
+    # Master, adding an extra 16 to the 80% goal.
+    ace_scores_are_checks: false
+    
+    # Toggles challenges as checks. This will add the first 11 challenge pages to the item pool representing each
+    # page on the Challenges menu. Some levels can be completed through challenges without their respective
+    # Stage Key. Page 12, the Insane Challenges are a separate toggle. Lastly, turning this on will add 20 more
+    # Certificates of Mastery, adding an extra 16 to the 80% goal as well as make Warren a progression item for
+    # the multi-level score challenges.
+    challenges_are_checks: false
+    
+    # Toggles the 12th and final page of the Challenge menu as an item and checks. These challenges are
+    # particularly difficult and not for the faint of heart. Turning this on will add 10 more Certificates of
+    # Mastery, adding an extra 8 to the 80% goal.
+    #
+    # NOTE: 'challenges_are_checks' must also be enabled for this to take effect.
+    insane_challenges_are_checks: false
+
+game: Manual_PeggleNights_Freezinater
+name: NugatNights

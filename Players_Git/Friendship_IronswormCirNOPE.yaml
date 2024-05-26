@@ -1,0 +1,38 @@
+Manual_Ironsworn_Axxroy:
+    progression_balancing: 50
+    accessibility: items
+    delve: true
+    games_override: []
+    # Valid games: 
+      # DOOM 1993
+      # DOOM II
+      # Factorio
+      # Hollow Knight
+      # Kingdom Hearts 2
+      # Manual_FFXIV_Silasary
+      # Manual_Ironsworn_Axxroy
+      # Manual_MHRiseHub_Axxroy
+      # Manual_PLA_Miro
+      # Minecraft
+      # Overcooked! 2
+      # Pokemon Red and Blue
+      # Pokemon Emerald
+      # Rogue Legacy
+      # Risk of Rain 2
+      # A Short Hike
+      # Sonic Adventure 2 Battle
+      # Stardew Valley
+      # Super Mario 64
+      # Super Mario World
+      # Super Metroid
+      # Terraria
+      # The Legend of Zelda
+      # The Witness
+      # Timespinner
+      # Tunic
+    
+    # Setting games_override to ["Everything"] will force all game content
+    # Setting games_override to [] will pull the valid games from the multiworld
+
+game: Manual_Ironsworn_Axxroy
+name: CirNOPE_FeSworn
