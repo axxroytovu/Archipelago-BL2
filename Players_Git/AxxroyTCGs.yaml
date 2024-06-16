@@ -1,0 +1,18 @@
+name: AxxroyBetrayal
+description: Default Manual_Betrayal_Axxroy Template
+game: Manual_Betrayal_Axxroy
+Manual_Betrayal_Axxroy:
+  progression_balancing: 0
+  accessibility: items
+  widows_walk: true
+  death_link: true
+
+---
+
+name: AxxroyPokemon
+description: Built with Axxroy's Fighting Game Builder
+game: Manual_PokemonTCG_Axxroy
+Manual_PokemonTCG_Axxroy:
+  progression_balancing: 0
+  accessibility: items
+  death_link: true
